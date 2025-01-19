@@ -1,0 +1,97 @@
+[
+    {
+        "id": "churchill",
+        "name": {
+            "first": "Winston",
+            "middle": "Leonard Spencer",
+            "last": "Churchill",
+            "patronymic": "",
+            "full": "Winston Leonard Spencer Churchill",
+            "short": "Winston Churchill"
+        },
+        "birth": {
+            "earliest": "1874-11-30",
+            "latest": "1874-11-30"
+        },
+        "death": {
+            "earliest": "1965-01-24",
+            "latest": "1965-01-24"
+        }
+    },
+    {
+        "id": "stalin",
+        "name": {
+            "first": "Joseph",
+            "middle": "",
+            "last": "Stalin",
+            "patronymic": "Vissarionovich",
+            "full": "Joseph Vissarionovich Stalin",
+            "short": "Joseph Stalin"
+        },
+        "birth": {
+            "earliest": "1878-12-18",
+            "latest": "1878-12-18"
+        },
+        "death": {
+            "earliest": "1953-03-05",
+            "latest": "1953-03-05"
+        }
+    },
+    {
+        "id": "roosevelt",
+        "name": {
+            "first": "Franklin",
+            "middle": "Delano",
+            "last": "Roosevelt",
+            "patronymic": "",
+            "full": "Franklin Delano Roosevelt",
+            "short": "Franklin Roosevelt"
+        },
+        "birth": {
+            "earliest": "1882-01-30",
+            "latest": "1882-01-30"
+        },
+        "death": {
+            "earliest": "1945-04-12",
+            "latest": "1945-04-12"
+        }
+    },
+    {
+        "id": "rabelais",
+        "name": {
+            "first": "François",
+            "middle": "",
+            "last": "Rabelais",
+            "patronymic": "",
+            "full": "François Rabelais",
+            "short": "François Rabelais"
+        },
+        "birth": {
+            "earliest": "1483-01-01",
+            "latest": "1494-12-31"
+        },
+        "death": {
+            "earliest": "1553-04-09",
+            "latest": "1553-04-09"
+        }
+    },
+    {
+        "id": "villon",
+        "name": {
+            "first": "François",
+            "middle": "",
+            "last": "Villon",
+            "patronymic": "",
+            "full": "François Villon",
+            "short": "François Villon"
+        },
+        "birth": {
+            "earliest": "1431-01-01",
+            "latest": "1431-12-31"
+        },
+        "death": {
+            "earliest": "1463-01-01",
+            "latest": "1465-12-31"
+        }
+    }
+] 

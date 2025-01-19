@@ -1,0 +1,15 @@
+```{=html}
+<div class="container">
+    <div class="filters">
+        <h2>Select People</h2>
+        <div id="peopleFilters"></div>
+    </div>
+    
+    <div class="timeline-container">
+        <div class="time-axis" id="timeAxis"></div>
+        <div class="timelines" id="timelines"></div>
+    </div>
+</div>
+
+<script src="timeline.js"></script>
+``` 
