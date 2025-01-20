@@ -1,97 +1,262 @@
 [
     {
-        "id": "churchill",
+        "id": "davincileonardo1452",
+        "name": {
+            "first": "Leonardo",
+            "middle": "",
+            "last": "Vinci",
+            "patronymic": "",
+            "particle": "da",
+            "full": "Leonardo da Vinci",
+            "short": "Leonardo da Vinci",
+            "sort": "da Vinci, Leonardo",
+            "alias": []
+        },
+        "birth": {
+            "earliest": "1452-04-15",
+            "latest": "1452-04-15",
+            "label": "15 Apr 1452",
+            "label_year": "1452"
+        },
+        "death": {
+            "earliest": "1519-05-02",
+            "latest": "1519-05-02",
+            "label": "02 May 1519",
+            "label_year": "1519"
+        }
+    },
+    {
+        "id": "clemensamuel1835",
+        "name": {
+            "first": "Samuel",
+            "middle": "Langhorne",
+            "last": "Clemens",
+            "patronymic": "",
+            "particle": "",
+            "full": "Samuel Langhorne Clemens",
+            "short": "Mark Twain",
+            "sort": "Clemens, Samuel (Mark Twain)",
+            "alias": ["Thomas Jefferson Snodgrass", "Josh"]
+        },
+        "birth": {
+            "earliest": "1835-11-30",
+            "latest": "1835-11-30",
+            "label": "30 Nov 1835",
+            "label_year": "1835"
+        },
+        "death": {
+            "earliest": "1910-04-21",
+            "latest": "1910-04-21",
+            "label": "21 Apr 1910",
+            "label_year": "1910"
+        }
+    },
+    {
+        "id": "churchillwinston1874",
         "name": {
             "first": "Winston",
             "middle": "Leonard Spencer",
             "last": "Churchill",
             "patronymic": "",
+            "particle": "",
             "full": "Winston Leonard Spencer Churchill",
-            "short": "Winston Churchill"
+            "short": "Winston Churchill",
+            "sort": "Churchill, Winston",
+            "alias": []
         },
         "birth": {
             "earliest": "1874-11-30",
-            "latest": "1874-11-30"
+            "latest": "1874-11-30",
+            "label": "30 Nov 1874",
+            "label_year": "1874"
         },
         "death": {
             "earliest": "1965-01-24",
-            "latest": "1965-01-24"
+            "latest": "1965-01-24",
+            "label": "24 Jan 1965",
+            "label_year": "1965"
         }
     },
     {
-        "id": "stalin",
+        "id": "stalinjosephvissarionovich1878",
         "name": {
             "first": "Joseph",
             "middle": "",
             "last": "Stalin",
             "patronymic": "Vissarionovich",
+            "particle": "",
+            "born": {
+                "first": "Ioseb",
+                "middle": "",
+                "last": "Jughashvili",
+                "patronymic": "Besarionis dze",
+                "particle": "",
+                "full": "Ioseb Besarionis dze Jughashvili"
+            },
             "full": "Joseph Vissarionovich Stalin",
-            "short": "Joseph Stalin"
+            "short": "Joseph Stalin",
+            "sort": "Stalin, Joseph",
+            "alias": ["Koba", "Soso"]
         },
         "birth": {
             "earliest": "1878-12-18",
-            "latest": "1878-12-18"
+            "latest": "1878-12-18",
+            "label": "18 Dec 1878",
+            "label_year": "1878"
         },
         "death": {
             "earliest": "1953-03-05",
-            "latest": "1953-03-05"
+            "latest": "1953-03-05",
+            "label": "05 Mar 1953",
+            "label_year": "1953"
         }
     },
     {
-        "id": "roosevelt",
+        "id": "rooseveltfranklin1882",
         "name": {
             "first": "Franklin",
             "middle": "Delano",
             "last": "Roosevelt",
             "patronymic": "",
+            "particle": "",
             "full": "Franklin Delano Roosevelt",
-            "short": "Franklin Roosevelt"
+            "short": "Franklin Roosevelt",
+            "sort": "Roosevelt, Franklin",
+            "alias": ["FDR"]
         },
         "birth": {
             "earliest": "1882-01-30",
-            "latest": "1882-01-30"
+            "latest": "1882-01-30",
+            "label": "30 Jan 1882",
+            "label_year": "1882"
         },
         "death": {
             "earliest": "1945-04-12",
-            "latest": "1945-04-12"
+            "latest": "1945-04-12",
+            "label": "12 Apr 1945",
+            "label_year": "1945"
         }
     },
     {
-        "id": "rabelais",
+        "id": "rabelaisfrancois1483",
         "name": {
             "first": "François",
             "middle": "",
             "last": "Rabelais",
             "patronymic": "",
+            "particle": "",
             "full": "François Rabelais",
-            "short": "François Rabelais"
+            "short": "François Rabelais",
+            "sort": "Rabelais, François",
+            "alias": ["Alcofribas Nasier"]
         },
         "birth": {
             "earliest": "1483-01-01",
-            "latest": "1494-12-31"
+            "latest": "1494-12-31",
+            "label": "[1483, 1494]",
+            "label_year": "1483/1494"
         },
         "death": {
             "earliest": "1553-04-09",
-            "latest": "1553-04-09"
+            "latest": "1553-04-09",
+            "label": "09 Apr 1553",
+            "label_year": "1553"
         }
     },
     {
-        "id": "villon",
+        "id": "villonfrancois1431",
         "name": {
             "first": "François",
             "middle": "",
             "last": "Villon",
             "patronymic": "",
+            "particle": "",
+            "born": [
+                {
+                    "first": "François",
+                    "middle": "",
+                    "last": "Montcorbier",
+                    "patronymic": "",
+                    "particle": "de",
+                    "full": "François de Montcorbier"
+                },
+                {
+                    "first": "François",
+                    "middle": "",
+                    "last": "Loges",
+                    "patronymic": "",
+                    "particle": "des",
+                    "full": "François des Loges"
+                }
+            ],
             "full": "François Villon",
-            "short": "François Villon"
+            "short": "François Villon",
+            "sort": "Villon, François",
+            "alias": []
         },
         "birth": {
-            "earliest": "1431-01-01",
-            "latest": "1431-12-31"
+            "earliest": "1431-04-01",
+            "latest": "1432-04-19",
+            "label": "[01 Apr 1431, 19 Apr 1432]",
+            "label_year": "1431/1432"
         },
         "death": {
             "earliest": "1463-01-01",
-            "latest": "1465-12-31"
+            "latest": "1465-12-31",
+            "label": "[1463, 1465]",
+            "label_year": "1463/1465"
+        }
+    },
+    {
+        "id": "debalzachonore1799",
+        "name": {
+            "first": "Honoré",
+            "middle": "",
+            "last": "Balzac",
+            "patronymic": "",
+            "particle": "de",
+            "full": "Honoré de Balzac",
+            "short": "Honoré de Balzac",
+            "sort": "de Balzac, Honoré",
+            "alias": ["Horace de Saint-Aubin", "Lord R'hoone"]
+        },
+        "birth": {
+            "earliest": "1799-05-20",
+            "latest": "1799-05-20",
+            "label": "20 May 1799",
+            "label_year": "1799"
+        },
+        "death": {
+            "earliest": "1850-08-18",
+            "latest": "1850-08-18",
+            "label": "18 Aug 1850",
+            "label_year": "1850"
+        }
+    },
+    {
+        "id": "dickenscharles1812",
+        "name": {
+            "first": "Charles",
+            "middle": "John Huffam",
+            "last": "Dickens",
+            "patronymic": "",
+            "particle": "",
+            "full": "Charles John Huffam Dickens",
+            "short": "Charles Dickens",
+            "sort": "Dickens, Charles",
+            "alias": ["Boz"]
+        },
+        "birth": {
+            "earliest": "1812-02-07",
+            "latest": "1812-02-07",
+            "label": "07 Feb 1812",
+            "label_year": "1812"
+        },
+        "death": {
+            "earliest": "1870-06-09",
+            "latest": "1870-06-09",
+            "label": "09 Jun 1870",
+            "label_year": "1870"
         }
     }
 ] 

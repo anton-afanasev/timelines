@@ -20,7 +20,9 @@
 
 .timeline-container {
     padding: 20px;
+    padding-left: 150px;
     overflow-x: auto;
+    position: relative;
 }
 
 .time-axis {
@@ -96,12 +98,17 @@
 
 .timeline-label {
     position: absolute;
-    left: 10px;
+    left: -160px;
+    width: 150px;
     top: 50%;
     transform: translateY(-50%);
     font-size: 14px;
     color: #333;
-    z-index: 1;
+    text-align: right;
+    padding-right: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .checkbox-item {
@@ -116,7 +123,15 @@
     height: 16px;
 }
 
+.checkbox-item .years {
+    white-space: nowrap;
+}
+
 .checkbox-item label {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 0 0.25em;
     cursor: pointer;
 }
 

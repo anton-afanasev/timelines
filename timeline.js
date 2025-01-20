@@ -103,6 +103,11 @@ class TimelineVisualization {
             const timeline = document.createElement('div');
             timeline.className = 'timeline';
             
+            const label = document.createElement('div');
+            label.className = 'timeline-label';
+            label.textContent = person.name.short;
+            timeline.appendChild(label);
+            
             const barWrapper = document.createElement('div');
             barWrapper.className = 'timeline-bars-wrapper';
             
@@ -142,15 +147,20 @@ class TimelineVisualization {
             
             timeline.appendChild(barWrapper);
             
-            const label = document.createElement('div');
-            label.className = 'timeline-label';
-            label.textContent = person.name.short;
+            // Create tooltip text with birth names and label dates
+            let tooltipText = person.name.full;
+            if (person.name.born) {
+                if (Array.isArray(person.name.born)) {
+                    const bornNames = person.name.born.map(n => n.full).join(' / ');
+                    tooltipText += ` (${bornNames})`;
+                } else {
+                    tooltipText += ` (${person.name.born.full})`;
+                }
+            }
+            tooltipText += `\n${person.birth.label} – ${person.death.label}`;
             
-            const tooltip = `${person.name.full}\nBirth: ${this.formatDate(new Date(person.birth.earliest))} - ${this.formatDate(new Date(person.birth.latest))}
-Death: ${this.formatDate(new Date(person.death.earliest))} - ${this.formatDate(new Date(person.death.latest))}`;
-            timeline.title = tooltip;
+            timeline.title = tooltipText;
             
-            timeline.appendChild(label);
             container.appendChild(timeline);
         });
     }
@@ -158,7 +168,33 @@ Death: ${this.formatDate(new Date(person.death.earliest))} - ${this.formatDate(n
     createFilters() {
         const container = document.getElementById('peopleFilters');
         
-        this.people.forEach(person => {
+        // Sort people by last name, first name, middle name, patronymic, and birth date
+        const sortedPeople = [...this.people].sort((a, b) => {
+            // Compare last names
+            if (a.name.last !== b.name.last) {
+                return a.name.last.localeCompare(b.name.last);
+            }
+            
+            // If last names are equal, compare first names
+            if (a.name.first !== b.name.first) {
+                return a.name.first.localeCompare(b.name.first);
+            }
+            
+            // If first names are equal, compare middle names
+            if (a.name.middle !== b.name.middle) {
+                return a.name.middle.localeCompare(b.name.middle);
+            }
+            
+            // If middle names are equal, compare patronymic names
+            if (a.name.patronymic !== b.name.patronymic) {
+                return a.name.patronymic.localeCompare(b.name.patronymic);
+            }
+            
+            // If all names are equal, compare birth dates
+            return new Date(a.birth.earliest) - new Date(b.birth.earliest);
+        });
+        
+        sortedPeople.forEach(person => {
             const div = document.createElement('div');
             div.className = 'checkbox-item';
             
@@ -176,7 +212,18 @@ Death: ${this.formatDate(new Date(person.death.earliest))} - ${this.formatDate(n
 
             const label = document.createElement('label');
             label.htmlFor = person.id;
-            label.textContent = `${person.name.short} (${this.formatDate(new Date(person.birth.earliest))} - ${this.formatDate(new Date(person.death.latest))})`;
+            
+            // Create name span
+            const nameSpan = document.createElement('span');
+            nameSpan.textContent = person.name.sort;
+            
+            // Create years span with line break opportunity
+            const yearsSpan = document.createElement('span');
+            yearsSpan.className = 'years';
+            yearsSpan.textContent = ` (${person.birth.label_year} – ${person.death.label_year})`;
+            
+            label.appendChild(nameSpan);
+            label.appendChild(yearsSpan);
 
             div.appendChild(checkbox);
             div.appendChild(label);
