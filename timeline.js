@@ -167,36 +167,38 @@ class TimelineVisualization {
 
     createFilters() {
         const container = document.getElementById('peopleFilters');
+        container.innerHTML = '';
         
-        // Sort people by last name, first name, middle name, patronymic, and birth date
+        const filterContainer = document.createElement('div');
+        filterContainer.className = 'filter-container';
+        
+        const searchInput = document.createElement('input');
+        searchInput.type = 'text';
+        searchInput.placeholder = 'Search people...';
+        searchInput.className = 'search-input';
+        
+        const dropdownContainer = document.createElement('div');
+        dropdownContainer.className = 'dropdown-container';
+        
+        const clearButton = document.createElement('button');
+        clearButton.textContent = 'Clear selection';
+        clearButton.className = 'clear-button';
+        clearButton.style.display = 'none';
+        
         const sortedPeople = [...this.people].sort((a, b) => {
-            // Compare last names
-            if (a.name.last !== b.name.last) {
-                return a.name.last.localeCompare(b.name.last);
-            }
-            
-            // If last names are equal, compare first names
-            if (a.name.first !== b.name.first) {
-                return a.name.first.localeCompare(b.name.first);
-            }
-            
-            // If first names are equal, compare middle names
-            if (a.name.middle !== b.name.middle) {
-                return a.name.middle.localeCompare(b.name.middle);
-            }
-            
-            // If middle names are equal, compare patronymic names
-            if (a.name.patronymic !== b.name.patronymic) {
-                return a.name.patronymic.localeCompare(b.name.patronymic);
-            }
-            
-            // If all names are equal, compare birth dates
+            if (a.name.last !== b.name.last) return a.name.last.localeCompare(b.name.last);
+            if (a.name.first !== b.name.first) return a.name.first.localeCompare(b.name.first);
+            if (a.name.middle !== b.name.middle) return a.name.middle.localeCompare(b.name.middle);
+            if (a.name.patronymic !== b.name.patronymic) return a.name.patronymic.localeCompare(b.name.patronymic);
             return new Date(a.birth.earliest) - new Date(b.birth.earliest);
         });
         
         sortedPeople.forEach(person => {
             const div = document.createElement('div');
             div.className = 'checkbox-item';
+            
+            const labelWrapper = document.createElement('div');
+            labelWrapper.className = 'label-wrapper';
             
             const checkbox = document.createElement('input');
             checkbox.type = 'checkbox';
@@ -207,17 +209,16 @@ class TimelineVisualization {
                 } else {
                     this.selectedPeople.delete(person);
                 }
+                clearButton.style.display = this.selectedPeople.size > 0 ? 'block' : 'none';
                 this.updateTimeRange();
             });
 
             const label = document.createElement('label');
             label.htmlFor = person.id;
             
-            // Create name span
             const nameSpan = document.createElement('span');
             nameSpan.textContent = person.name.sort;
             
-            // Create years span with line break opportunity
             const yearsSpan = document.createElement('span');
             yearsSpan.className = 'years';
             yearsSpan.textContent = ` (${person.birth.label_year} – ${person.death.label_year})`;
@@ -225,10 +226,37 @@ class TimelineVisualization {
             label.appendChild(nameSpan);
             label.appendChild(yearsSpan);
 
-            div.appendChild(checkbox);
-            div.appendChild(label);
-            container.appendChild(div);
+            labelWrapper.appendChild(checkbox);
+            labelWrapper.appendChild(label);
+            div.appendChild(labelWrapper);
+            dropdownContainer.appendChild(div);
         });
+
+        searchInput.addEventListener('input', (e) => {
+            const searchText = e.target.value.toLowerCase();
+            const items = dropdownContainer.getElementsByClassName('checkbox-item');
+            
+            Array.from(items).forEach(item => {
+                const label = item.querySelector('label');
+                const text = label.textContent.toLowerCase();
+                item.style.display = text.includes(searchText) ? 'block' : 'none';
+            });
+        });
+
+        clearButton.addEventListener('click', () => {
+            const checkboxes = dropdownContainer.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach(checkbox => {
+                checkbox.checked = false;
+            });
+            this.selectedPeople.clear();
+            clearButton.style.display = 'none';
+            this.updateTimeRange();
+        });
+
+        filterContainer.appendChild(searchInput);
+        filterContainer.appendChild(dropdownContainer);
+        filterContainer.appendChild(clearButton);
+        container.appendChild(filterContainer);
     }
 }
 
