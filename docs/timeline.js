@@ -98,26 +98,7 @@ class TimelineVisualization {
         const timeSpan = this.maxDate.getTime() - this.minDate.getTime();
         
         const sortedPeople = Array.from(this.selectedPeople)
-            .sort((a, b) => {
-                // Compare last names in current language
-                if (a.name.last?.[this.language] !== b.name.last?.[this.language]) {
-                    return (a.name.last?.[this.language] || '').localeCompare(b.name.last?.[this.language] || '', this.language);
-                }
-                // Compare first names
-                if (a.name.first?.[this.language] !== b.name.first?.[this.language]) {
-                    return (a.name.first?.[this.language] || '').localeCompare(b.name.first?.[this.language] || '', this.language);
-                }
-                // Compare middle names if they exist
-                if (a.name.middle?.[this.language] !== b.name.middle?.[this.language]) {
-                    return (a.name.middle?.[this.language] || '').localeCompare(b.name.middle?.[this.language] || '', this.language);
-                }
-                // Compare patronymics if they exist
-                if (a.name.patronymic?.[this.language] !== b.name.patronymic?.[this.language]) {
-                    return (a.name.patronymic?.[this.language] || '').localeCompare(b.name.patronymic?.[this.language] || '', this.language);
-                }
-                // If all names are equal, sort by birth date
-                return new Date(a.birth.earliest) - new Date(b.birth.earliest);
-            });
+            .sort((a, b) => new Date(a.birth.earliest) - new Date(b.birth.earliest));
         
         sortedPeople.forEach(person => {
             const timeline = document.createElement('div');
