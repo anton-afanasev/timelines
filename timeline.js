@@ -10,10 +10,29 @@ class TimelineVisualization {
         // Add language button handler
         const langButton = document.getElementById('langButton');
         langButton.addEventListener('click', () => {
+            // Store currently selected IDs before recreating filters
+            const selectedIds = Array.from(this.selectedPeople).map(person => person.id);
+            
             this.language = this.language === 'en' ? 'ru' : 'en';
             langButton.textContent = this.language.toUpperCase();
+            
+            // Recreate filters with new language
+            this.createFilters();
+            
+            // Restore checkbox states and selected people
+            selectedIds.forEach(id => {
+                const checkbox = document.getElementById(id);
+                if (checkbox) {
+                    checkbox.checked = true;
+                    const person = this.people.find(p => p.id === id);
+                    if (person) {
+                        this.selectedPeople.add(person);
+                    }
+                }
+            });
+            
+            // Update visualization with maintained selection
             this.updateVisualization();
-            this.createFilters();  // Recreate filters with new language
         });
     }
 
