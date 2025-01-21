@@ -208,7 +208,8 @@ class TimelineVisualization {
             tooltipText += `\n${person.birth.label} – ${person.death.label}`;
             if (person.name.alias && person.name.alias.length > 0) {
                 const aliases = person.name.alias.map(a => a[this.language]).join(', ');
-                tooltipText += `\nAliases: ${aliases}`;
+                const aliasLabel = this.language === 'en' ? 'Aliases' : 'Псевдонимы';
+                tooltipText += `\n${aliasLabel}: ${aliases}`;
             }
             
             timeline.title = tooltipText;
