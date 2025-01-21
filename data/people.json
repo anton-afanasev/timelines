@@ -7,8 +7,7 @@
             "particle": "da",
             "full": "Leonardo da Vinci",
             "short": "Leonardo da Vinci",
-            "sort": "da Vinci, Leonardo",
-            "alias": []
+            "sort": "da Vinci, Leonardo"
         },
         "birth": {
             "earliest": "1452-04-15",
@@ -55,8 +54,7 @@
             "last": "Churchill",
             "full": "Winston Leonard Spencer Churchill",
             "short": "Winston Churchill",
-            "sort": "Churchill, Winston",
-            "alias": []
+            "sort": "Churchill, Winston"
         },
         "birth": {
             "earliest": "1874-11-30",
@@ -169,8 +167,7 @@
             ],
             "full": "François Villon",
             "short": "François Villon",
-            "sort": "Villon, François",
-            "alias": []
+            "sort": "Villon, François"
         },
         "birth": {
             "earliest": "1431-04-01",

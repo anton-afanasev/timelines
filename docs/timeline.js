@@ -158,6 +158,9 @@ class TimelineVisualization {
                 }
             }
             tooltipText += `\n${person.birth.label} – ${person.death.label}`;
+            if (person.name.alias && person.name.alias.length > 0) {
+                tooltipText += `\nAliases: ${person.name.alias.join(', ')}`;
+            }
             
             timeline.title = tooltipText;
             
