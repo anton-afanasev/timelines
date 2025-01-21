@@ -143,7 +143,26 @@ class TimelineVisualization {
         const timeSpan = this.maxDate.getTime() - this.minDate.getTime();
         
         const sortedPeople = Array.from(this.selectedPeople)
-            .sort((a, b) => new Date(a.birth.earliest) - new Date(b.birth.earliest));
+            .sort((a, b) => {
+                // First compare by birth date
+                const dateComparison = new Date(a.birth.earliest) - new Date(b.birth.earliest);
+                if (dateComparison !== 0) return dateComparison;
+
+                // If birth dates are identical, compare names in order according to current language
+                if (a.name.last?.[this.language] !== b.name.last?.[this.language]) {
+                    return (a.name.last?.[this.language] || '').localeCompare(b.name.last?.[this.language] || '', this.language);
+                }
+                if (a.name.first?.[this.language] !== b.name.first?.[this.language]) {
+                    return (a.name.first?.[this.language] || '').localeCompare(b.name.first?.[this.language] || '', this.language);
+                }
+                if (a.name.middle?.[this.language] !== b.name.middle?.[this.language]) {
+                    return (a.name.middle?.[this.language] || '').localeCompare(b.name.middle?.[this.language] || '', this.language);
+                }
+                if (a.name.patronymic?.[this.language] !== b.name.patronymic?.[this.language]) {
+                    return (a.name.patronymic?.[this.language] || '').localeCompare(b.name.patronymic?.[this.language] || '', this.language);
+                }
+                return 0;
+            });
         
         sortedPeople.forEach(person => {
             const timeline = document.createElement('div');
