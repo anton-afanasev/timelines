@@ -12,9 +12,13 @@ class TimelineVisualization {
         langButton.addEventListener('click', () => {
             // Store currently selected IDs before recreating filters
             const selectedIds = Array.from(this.selectedPeople).map(person => person.id);
+            const hasSelection = selectedIds.length > 0;  // Remember if we had selections
             
             this.language = this.language === 'en' ? 'ru' : 'en';
             langButton.textContent = this.language.toUpperCase();
+            
+            // Clear the current selection set but remember we had selections
+            this.selectedPeople.clear();
             
             // Recreate filters with new language
             this.createFilters();
@@ -30,6 +34,12 @@ class TimelineVisualization {
                     }
                 }
             });
+            
+            // Ensure clear button is visible if we had selections
+            const clearButton = document.getElementById('clearSelection');
+            if (clearButton && hasSelection) {
+                clearButton.style.display = 'block';
+            }
             
             // Update visualization with maintained selection
             this.updateVisualization();
@@ -217,8 +227,15 @@ class TimelineVisualization {
         
         const clearButton = document.createElement('button');
         clearButton.textContent = 'Clear selection';
-        clearButton.className = 'clear-button';
-        clearButton.style.display = 'none';
+        clearButton.id = 'clearSelection';
+        clearButton.style.display = this.selectedPeople.size > 0 ? 'block' : 'none';
+        clearButton.addEventListener('click', () => {
+            this.selectedPeople.clear();
+            document.querySelectorAll('.dropdown-container input[type="checkbox"]')
+                .forEach(checkbox => checkbox.checked = false);
+            clearButton.style.display = 'none';
+            this.updateVisualization();
+        });
         
         const sortedPeople = [...this.people].sort((a, b) => {
             // Compare last names in current language
@@ -289,16 +306,6 @@ class TimelineVisualization {
                 const text = label.textContent.toLowerCase();
                 item.style.display = text.includes(searchText) ? 'block' : 'none';
             });
-        });
-
-        clearButton.addEventListener('click', () => {
-            const checkboxes = dropdownContainer.querySelectorAll('input[type="checkbox"]');
-            checkboxes.forEach(checkbox => {
-                checkbox.checked = false;
-            });
-            this.selectedPeople.clear();
-            clearButton.style.display = 'none';
-            this.updateTimeRange();
         });
 
         filterContainer.appendChild(searchInput);
