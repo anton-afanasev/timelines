@@ -2,12 +2,30 @@
     {
         "id": "davincileonardo1452",
         "name": {
-            "first": "Leonardo",
-            "last": "Vinci",
-            "particle": "da",
-            "full": "Leonardo da Vinci",
-            "short": "Leonardo da Vinci",
-            "sort": "da Vinci, Leonardo"
+            "first": {
+                "en": "Leonardo",
+                "ru": "Леонардо"
+            },
+            "last": {
+                "en": "Vinci",
+                "ru": "Винчи"
+            },
+            "particle": {
+                "en": "da",
+                "ru": "да"
+            },
+            "full": {
+                "en": "Leonardo da Vinci",
+                "ru": "Леонардо да Винчи"
+            },
+            "short": {
+                "en": "Leonardo da Vinci",
+                "ru": "Леонардо да Винчи"
+            },
+            "sort": {
+                "en": "da Vinci, Leonardo",
+                "ru": "да Винчи, Леонардо"
+            }
         },
         "birth": {
             "earliest": "1452-04-15",
@@ -25,13 +43,40 @@
     {
         "id": "clemensamuel1835",
         "name": {
-            "first": "Samuel",
-            "middle": "Langhorne",
-            "last": "Clemens",
-            "full": "Samuel Langhorne Clemens",
-            "short": "Mark Twain",
-            "sort": "Clemens, Samuel (Mark Twain)",
-            "alias": ["Thomas Jefferson Snodgrass", "Josh"]
+            "first": {
+                "en": "Samuel",
+                "ru": "Сэмюэл"
+            },
+            "middle": {
+                "en": "Langhorne",
+                "ru": "Лэнгхорн"
+            },
+            "last": {
+                "en": "Clemens",
+                "ru": "Клеменс"
+            },
+            "full": {
+                "en": "Samuel Langhorne Clemens",
+                "ru": "Сэмюэл Лэнгхорн Клеменс"
+            },
+            "short": {
+                "en": "Mark Twain",
+                "ru": "Марк Твен"
+            },
+            "sort": {
+                "en": "Clemens, Samuel (Mark Twain)",
+                "ru": "Клеменс, Сэмюэл (Марк Твен)"
+            },
+            "alias": [
+                {
+                    "en": "Thomas Jefferson Snodgrass",
+                    "ru": "Томас Джефферсон Снодграсс"
+                },
+                {
+                    "en": "Josh",
+                    "ru": "Джош"
+                }
+            ]
         },
         "birth": {
             "earliest": "1835-11-30",
@@ -49,12 +94,30 @@
     {
         "id": "churchillwinston1874",
         "name": {
-            "first": "Winston",
-            "middle": "Leonard Spencer",
-            "last": "Churchill",
-            "full": "Winston Leonard Spencer Churchill",
-            "short": "Winston Churchill",
-            "sort": "Churchill, Winston"
+            "first": {
+                "en": "Winston",
+                "ru": "Уинстон"
+            },
+            "middle": {
+                "en": "Leonard Spencer",
+                "ru": "Леонард Спенсер"
+            },
+            "last": {
+                "en": "Churchill",
+                "ru": "Черчилль"
+            },
+            "full": {
+                "en": "Winston Leonard Spencer Churchill",
+                "ru": "Уинстон Леонард Спенсер Черчилль"
+            },
+            "short": {
+                "en": "Winston Churchill",
+                "ru": "Уинстон Черчилль"
+            },
+            "sort": {
+                "en": "Churchill, Winston",
+                "ru": "Черчилль, Уинстон"
+            }
         },
         "birth": {
             "earliest": "1874-11-30",
@@ -72,19 +135,58 @@
     {
         "id": "stalinjosephvissarionovich1878",
         "name": {
-            "first": "Joseph",
-            "last": "Stalin",
-            "patronymic": "Vissarionovich",
-            "born": {
-                "first": "Ioseb",
-                "last": "Jughashvili",
-                "patronymic": "Besarionis dze",
-                "full": "Ioseb Besarionis dze Jughashvili"
+            "first": {
+                "en": "Joseph",
+                "ru": "Иосиф"
             },
-            "full": "Joseph Vissarionovich Stalin",
-            "short": "Joseph Stalin",
-            "sort": "Stalin, Joseph",
-            "alias": ["Koba", "Soso"]
+            "last": {
+                "en": "Stalin",
+                "ru": "Сталин"
+            },
+            "patronymic": {
+                "en": "Vissarionovich",
+                "ru": "Виссарионович"
+            },
+            "born": {
+                "first": {
+                    "en": "Ioseb",
+                    "ru": "Иосеб"
+                },
+                "last": {
+                    "en": "Jughashvili",
+                    "ru": "Джугашвили"
+                },
+                "patronymic": {
+                    "en": "Besarionis dze",
+                    "ru": "Бесарионис дзе"
+                },
+                "full": {
+                    "en": "Ioseb Besarionis dze Jughashvili",
+                    "ru": "Иосеб Бесарионис дзе Джугашвили"
+                }
+            },
+            "full": {
+                "en": "Joseph Vissarionovich Stalin",
+                "ru": "Иосиф Виссарионович Сталин"
+            },
+            "short": {
+                "en": "Joseph Stalin",
+                "ru": "Иосиф Сталин"
+            },
+            "sort": {
+                "en": "Stalin, Joseph",
+                "ru": "Сталин, Иосиф"
+            },
+            "alias": [
+                {
+                    "en": "Koba",
+                    "ru": "Коба"
+                },
+                {
+                    "en": "Soso",
+                    "ru": "Сосо"
+                }
+            ]
         },
         "birth": {
             "earliest": "1878-12-18",
@@ -102,13 +204,36 @@
     {
         "id": "rooseveltfranklin1882",
         "name": {
-            "first": "Franklin",
-            "middle": "Delano",
-            "last": "Roosevelt",
-            "full": "Franklin Delano Roosevelt",
-            "short": "Franklin Roosevelt",
-            "sort": "Roosevelt, Franklin",
-            "alias": ["FDR"]
+            "first": {
+                "en": "Franklin",
+                "ru": "Франклин"
+            },
+            "middle": {
+                "en": "Delano",
+                "ru": "Делано"
+            },
+            "last": {
+                "en": "Roosevelt",
+                "ru": "Рузвельт"
+            },
+            "full": {
+                "en": "Franklin Delano Roosevelt",
+                "ru": "Франклин Делано Рузвельт"
+            },
+            "short": {
+                "en": "Franklin Roosevelt",
+                "ru": "Франклин Рузвельт"
+            },
+            "sort": {
+                "en": "Roosevelt, Franklin",
+                "ru": "Рузвельт, Франклин"
+            },
+            "alias": [
+                {
+                    "en": "FDR",
+                    "ru": "ФДР"
+                }
+            ]
         },
         "birth": {
             "earliest": "1882-01-30",
@@ -126,12 +251,32 @@
     {
         "id": "rabelaisfrancois1483",
         "name": {
-            "first": "François",
-            "last": "Rabelais",
-            "full": "François Rabelais",
-            "short": "François Rabelais",
-            "sort": "Rabelais, François",
-            "alias": ["Alcofribas Nasier"]
+            "first": {
+                "en": "François",
+                "ru": "Франсуа"
+            },
+            "last": {
+                "en": "Rabelais",
+                "ru": "Рабле"
+            },
+            "full": {
+                "en": "François Rabelais",
+                "ru": "Франсуа Рабле"
+            },
+            "short": {
+                "en": "François Rabelais",
+                "ru": "Франсуа Рабле"
+            },
+            "sort": {
+                "en": "Rabelais, François",
+                "ru": "Рабле, Франсуа"
+            },
+            "alias": [
+                {
+                    "en": "Alcofribas Nasier",
+                    "ru": "Алькофрибас Назье"
+                }
+            ]
         },
         "birth": {
             "earliest": "1483-01-01",
@@ -149,25 +294,64 @@
     {
         "id": "villonfrancois1431",
         "name": {
-            "first": "François",
-            "last": "Villon",
+            "first": {
+                "en": "François",
+                "ru": "Франсуа"
+            },
+            "last": {
+                "en": "Villon",
+                "ru": "Вийон"
+            },
             "born": [
                 {
-                    "first": "François",
-                    "last": "Montcorbier",
-                    "particle": "de",
-                    "full": "François de Montcorbier"
+                    "first": {
+                        "en": "François",
+                        "ru": "Франсуа"
+                    },
+                    "last": {
+                        "en": "Montcorbier",
+                        "ru": "Монкорбье"
+                    },
+                    "particle": {
+                        "en": "de",
+                        "ru": "де"
+                    },
+                    "full": {
+                        "en": "François de Montcorbier",
+                        "ru": "Франсуа де Монкорбье"
+                    }
                 },
                 {
-                    "first": "François",
-                    "last": "Loges",
-                    "particle": "des",
-                    "full": "François des Loges"
+                    "first": {
+                        "en": "François",
+                        "ru": "Франсуа"
+                    },
+                    "last": {
+                        "en": "Loges",
+                        "ru": "Лож"
+                    },
+                    "particle": {
+                        "en": "des",
+                        "ru": "де"
+                    },
+                    "full": {
+                        "en": "François des Loges",
+                        "ru": "Франсуа де Лож"
+                    }
                 }
             ],
-            "full": "François Villon",
-            "short": "François Villon",
-            "sort": "Villon, François"
+            "full": {
+                "en": "François Villon",
+                "ru": "Франсуа Вийон"
+            },
+            "short": {
+                "en": "François Villon",
+                "ru": "Франсуа Вийон"
+            },
+            "sort": {
+                "en": "Villon, François",
+                "ru": "Вийон, Франсуа"
+            }
         },
         "birth": {
             "earliest": "1431-04-01",
@@ -185,13 +369,40 @@
     {
         "id": "debalzachonore1799",
         "name": {
-            "first": "Honoré",
-            "last": "Balzac",
-            "particle": "de",
-            "full": "Honoré de Balzac",
-            "short": "Honoré de Balzac",
-            "sort": "de Balzac, Honoré",
-            "alias": ["Horace de Saint-Aubin", "Lord R'hoone"]
+            "first": {
+                "en": "Honoré",
+                "ru": "Оноре"
+            },
+            "last": {
+                "en": "Balzac",
+                "ru": "Бальзак"
+            },
+            "particle": {
+                "en": "de",
+                "ru": "де"
+            },
+            "full": {
+                "en": "Honoré de Balzac",
+                "ru": "Оноре де Бальзак"
+            },
+            "short": {
+                "en": "Honoré de Balzac",
+                "ru": "Оноре де Бальзак"
+            },
+            "sort": {
+                "en": "de Balzac, Honoré",
+                "ru": "де Бальзак, Оноре"
+            },
+            "alias": [
+                {
+                    "en": "Horace de Saint-Aubin",
+                    "ru": "Орас де Сент-Обен"
+                },
+                {
+                    "en": "Lord R'hoone",
+                    "ru": "Лорд Р'оон"
+                }
+            ]
         },
         "birth": {
             "earliest": "1799-05-20",
@@ -209,13 +420,36 @@
     {
         "id": "dickenscharles1812",
         "name": {
-            "first": "Charles",
-            "middle": "John Huffam",
-            "last": "Dickens",
-            "full": "Charles John Huffam Dickens",
-            "short": "Charles Dickens",
-            "sort": "Dickens, Charles",
-            "alias": ["Boz"]
+            "first": {
+                "en": "Charles",
+                "ru": "Чарльз"
+            },
+            "middle": {
+                "en": "John Huffam",
+                "ru": "Джон Хаффем"
+            },
+            "last": {
+                "en": "Dickens",
+                "ru": "Диккенс"
+            },
+            "full": {
+                "en": "Charles John Huffam Dickens",
+                "ru": "Чарльз Джон Хаффем Диккенс"
+            },
+            "short": {
+                "en": "Charles Dickens",
+                "ru": "Чарльз Диккенс"
+            },
+            "sort": {
+                "en": "Dickens, Charles",
+                "ru": "Диккенс, Чарльз"
+            },
+            "alias": [
+                {
+                    "en": "Boz",
+                    "ru": "Боз"
+                }
+            ]
         },
         "birth": {
             "earliest": "1812-02-07",

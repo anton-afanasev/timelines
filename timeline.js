@@ -5,6 +5,7 @@ class TimelineVisualization {
         this.maxDate = null;
         this.containerWidth = 0;
         this.people = [];
+        this.language = 'en';  // Default language
     }
 
     async init() {
@@ -97,7 +98,26 @@ class TimelineVisualization {
         const timeSpan = this.maxDate.getTime() - this.minDate.getTime();
         
         const sortedPeople = Array.from(this.selectedPeople)
-            .sort((a, b) => new Date(a.birth.earliest) - new Date(b.birth.earliest));
+            .sort((a, b) => {
+                // Compare last names in current language
+                if (a.name.last?.[this.language] !== b.name.last?.[this.language]) {
+                    return (a.name.last?.[this.language] || '').localeCompare(b.name.last?.[this.language] || '', this.language);
+                }
+                // Compare first names
+                if (a.name.first?.[this.language] !== b.name.first?.[this.language]) {
+                    return (a.name.first?.[this.language] || '').localeCompare(b.name.first?.[this.language] || '', this.language);
+                }
+                // Compare middle names if they exist
+                if (a.name.middle?.[this.language] !== b.name.middle?.[this.language]) {
+                    return (a.name.middle?.[this.language] || '').localeCompare(b.name.middle?.[this.language] || '', this.language);
+                }
+                // Compare patronymics if they exist
+                if (a.name.patronymic?.[this.language] !== b.name.patronymic?.[this.language]) {
+                    return (a.name.patronymic?.[this.language] || '').localeCompare(b.name.patronymic?.[this.language] || '', this.language);
+                }
+                // If all names are equal, sort by birth date
+                return new Date(a.birth.earliest) - new Date(b.birth.earliest);
+            });
         
         sortedPeople.forEach(person => {
             const timeline = document.createElement('div');
@@ -105,7 +125,7 @@ class TimelineVisualization {
             
             const label = document.createElement('div');
             label.className = 'timeline-label';
-            label.textContent = person.name.short;
+            label.textContent = person.name.short[this.language];
             timeline.appendChild(label);
             
             const barWrapper = document.createElement('div');
@@ -148,18 +168,21 @@ class TimelineVisualization {
             timeline.appendChild(barWrapper);
             
             // Create tooltip text with birth names and label dates
-            let tooltipText = person.name.full;
+            let tooltipText = person.name.full[this.language];
             if (person.name.born) {
                 if (Array.isArray(person.name.born)) {
-                    const bornNames = person.name.born.map(n => n.full).join(' / ');
+                    const bornNames = person.name.born
+                        .map(n => n.full[this.language])
+                        .join(' / ');
                     tooltipText += ` (${bornNames})`;
                 } else {
-                    tooltipText += ` (${person.name.born.full})`;
+                    tooltipText += ` (${person.name.born.full[this.language]})`;
                 }
             }
             tooltipText += `\n${person.birth.label} – ${person.death.label}`;
             if (person.name.alias && person.name.alias.length > 0) {
-                tooltipText += `\nAliases: ${person.name.alias.join(', ')}`;
+                const aliases = person.name.alias.map(a => a[this.language]).join(', ');
+                tooltipText += `\nAliases: ${aliases}`;
             }
             
             timeline.title = tooltipText;
@@ -189,10 +212,23 @@ class TimelineVisualization {
         clearButton.style.display = 'none';
         
         const sortedPeople = [...this.people].sort((a, b) => {
-            if (a.name.last !== b.name.last) return a.name.last.localeCompare(b.name.last);
-            if (a.name.first !== b.name.first) return a.name.first.localeCompare(b.name.first);
-            if (a.name.middle !== b.name.middle) return a.name.middle.localeCompare(b.name.middle);
-            if (a.name.patronymic !== b.name.patronymic) return a.name.patronymic.localeCompare(b.name.patronymic);
+            // Compare last names in current language
+            if (a.name.last?.[this.language] !== b.name.last?.[this.language]) {
+                return (a.name.last?.[this.language] || '').localeCompare(b.name.last?.[this.language] || '', this.language);
+            }
+            // Compare first names
+            if (a.name.first?.[this.language] !== b.name.first?.[this.language]) {
+                return (a.name.first?.[this.language] || '').localeCompare(b.name.first?.[this.language] || '', this.language);
+            }
+            // Compare middle names if they exist
+            if (a.name.middle?.[this.language] !== b.name.middle?.[this.language]) {
+                return (a.name.middle?.[this.language] || '').localeCompare(b.name.middle?.[this.language] || '', this.language);
+            }
+            // Compare patronymics if they exist
+            if (a.name.patronymic?.[this.language] !== b.name.patronymic?.[this.language]) {
+                return (a.name.patronymic?.[this.language] || '').localeCompare(b.name.patronymic?.[this.language] || '', this.language);
+            }
+            // If all names are equal, sort by birth date
             return new Date(a.birth.earliest) - new Date(b.birth.earliest);
         });
         
@@ -220,7 +256,7 @@ class TimelineVisualization {
             label.htmlFor = person.id;
             
             const nameSpan = document.createElement('span');
-            nameSpan.textContent = person.name.sort;
+            nameSpan.textContent = person.name.sort[this.language];
             
             const yearsSpan = document.createElement('span');
             yearsSpan.className = 'years';
