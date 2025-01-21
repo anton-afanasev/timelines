@@ -3,9 +3,7 @@
         "id": "davincileonardo1452",
         "name": {
             "first": "Leonardo",
-            "middle": "",
             "last": "Vinci",
-            "patronymic": "",
             "particle": "da",
             "full": "Leonardo da Vinci",
             "short": "Leonardo da Vinci",
@@ -31,8 +29,6 @@
             "first": "Samuel",
             "middle": "Langhorne",
             "last": "Clemens",
-            "patronymic": "",
-            "particle": "",
             "full": "Samuel Langhorne Clemens",
             "short": "Mark Twain",
             "sort": "Clemens, Samuel (Mark Twain)",
@@ -57,8 +53,6 @@
             "first": "Winston",
             "middle": "Leonard Spencer",
             "last": "Churchill",
-            "patronymic": "",
-            "particle": "",
             "full": "Winston Leonard Spencer Churchill",
             "short": "Winston Churchill",
             "sort": "Churchill, Winston",
@@ -81,16 +75,12 @@
         "id": "stalinjosephvissarionovich1878",
         "name": {
             "first": "Joseph",
-            "middle": "",
             "last": "Stalin",
             "patronymic": "Vissarionovich",
-            "particle": "",
             "born": {
                 "first": "Ioseb",
-                "middle": "",
                 "last": "Jughashvili",
                 "patronymic": "Besarionis dze",
-                "particle": "",
                 "full": "Ioseb Besarionis dze Jughashvili"
             },
             "full": "Joseph Vissarionovich Stalin",
@@ -117,8 +107,6 @@
             "first": "Franklin",
             "middle": "Delano",
             "last": "Roosevelt",
-            "patronymic": "",
-            "particle": "",
             "full": "Franklin Delano Roosevelt",
             "short": "Franklin Roosevelt",
             "sort": "Roosevelt, Franklin",
@@ -141,10 +129,7 @@
         "id": "rabelaisfrancois1483",
         "name": {
             "first": "François",
-            "middle": "",
             "last": "Rabelais",
-            "patronymic": "",
-            "particle": "",
             "full": "François Rabelais",
             "short": "François Rabelais",
             "sort": "Rabelais, François",
@@ -167,24 +152,17 @@
         "id": "villonfrancois1431",
         "name": {
             "first": "François",
-            "middle": "",
             "last": "Villon",
-            "patronymic": "",
-            "particle": "",
             "born": [
                 {
                     "first": "François",
-                    "middle": "",
                     "last": "Montcorbier",
-                    "patronymic": "",
                     "particle": "de",
                     "full": "François de Montcorbier"
                 },
                 {
                     "first": "François",
-                    "middle": "",
                     "last": "Loges",
-                    "patronymic": "",
                     "particle": "des",
                     "full": "François des Loges"
                 }
@@ -211,9 +189,7 @@
         "id": "debalzachonore1799",
         "name": {
             "first": "Honoré",
-            "middle": "",
             "last": "Balzac",
-            "patronymic": "",
             "particle": "de",
             "full": "Honoré de Balzac",
             "short": "Honoré de Balzac",
@@ -239,8 +215,6 @@
             "first": "Charles",
             "middle": "John Huffam",
             "last": "Dickens",
-            "patronymic": "",
-            "particle": "",
             "full": "Charles John Huffam Dickens",
             "short": "Charles Dickens",
             "sort": "Dickens, Charles",
