@@ -6,6 +6,15 @@ class TimelineVisualization {
         this.containerWidth = 0;
         this.people = [];
         this.language = 'en';  // Default language
+        
+        // Add language button handler
+        const langButton = document.getElementById('langButton');
+        langButton.addEventListener('click', () => {
+            this.language = this.language === 'en' ? 'ru' : 'en';
+            langButton.textContent = this.language.toUpperCase();
+            this.updateVisualization();
+            this.createFilters();  // Recreate filters with new language
+        });
     }
 
     async init() {

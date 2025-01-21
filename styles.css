@@ -208,3 +208,21 @@
 .clear-button:hover {
     background-color: #e0e0e0;
 }
+
+.language-selector {
+    margin-bottom: 10px;  /* Space between button and heading */
+}
+
+#langButton {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+#langButton:hover {
+    background: #f0f0f0;
+}
