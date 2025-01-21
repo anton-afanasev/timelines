@@ -12,10 +12,14 @@ class TimelineVisualization {
         langButton.addEventListener('click', () => {
             // Store currently selected IDs before recreating filters
             const selectedIds = Array.from(this.selectedPeople).map(person => person.id);
-            const hasSelection = selectedIds.length > 0;  // Remember if we had selections
+            const hasSelection = selectedIds.length > 0;
             
             this.language = this.language === 'en' ? 'ru' : 'en';
             langButton.textContent = this.language.toUpperCase();
+            
+            // Update the heading text
+            const heading = document.querySelector('.filters h2');
+            heading.textContent = this.language === 'en' ? 'Lifetimes' : 'Годы жизни';
             
             // Clear the current selection set but remember we had selections
             this.selectedPeople.clear();

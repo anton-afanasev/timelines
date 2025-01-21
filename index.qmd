@@ -4,7 +4,7 @@
         <div class="language-selector">
             <button id="langButton">EN</button>
         </div>
-        <h2>Select People</h2>
+        <h2>Lifetimes</h2>
         <div id="peopleFilters"></div>
     </div>
     
