@@ -12,13 +12,13 @@
         "birth": {
             "earliest": "1452-04-15",
             "latest": "1452-04-15",
-            "label": "15 Apr 1452",
+            "label": "15.04.1452",
             "label_year": "1452"
         },
         "death": {
             "earliest": "1519-05-02",
             "latest": "1519-05-02",
-            "label": "02 May 1519",
+            "label": "02.05.1519",
             "label_year": "1519"
         }
     },
@@ -36,13 +36,13 @@
         "birth": {
             "earliest": "1835-11-30",
             "latest": "1835-11-30",
-            "label": "30 Nov 1835",
+            "label": "30.11.1835",
             "label_year": "1835"
         },
         "death": {
             "earliest": "1910-04-21",
             "latest": "1910-04-21",
-            "label": "21 Apr 1910",
+            "label": "21.04.1910",
             "label_year": "1910"
         }
     },
@@ -59,13 +59,13 @@
         "birth": {
             "earliest": "1874-11-30",
             "latest": "1874-11-30",
-            "label": "30 Nov 1874",
+            "label": "30.11.1874",
             "label_year": "1874"
         },
         "death": {
             "earliest": "1965-01-24",
             "latest": "1965-01-24",
-            "label": "24 Jan 1965",
+            "label": "24.01.1965",
             "label_year": "1965"
         }
     },
@@ -89,13 +89,13 @@
         "birth": {
             "earliest": "1878-12-18",
             "latest": "1878-12-18",
-            "label": "18 Dec 1878",
+            "label": "18.12.1878",
             "label_year": "1878"
         },
         "death": {
             "earliest": "1953-03-05",
             "latest": "1953-03-05",
-            "label": "05 Mar 1953",
+            "label": "05.03.1953",
             "label_year": "1953"
         }
     },
@@ -113,13 +113,13 @@
         "birth": {
             "earliest": "1882-01-30",
             "latest": "1882-01-30",
-            "label": "30 Jan 1882",
+            "label": "30.01.1882",
             "label_year": "1882"
         },
         "death": {
             "earliest": "1945-04-12",
             "latest": "1945-04-12",
-            "label": "12 Apr 1945",
+            "label": "12.04.1945",
             "label_year": "1945"
         }
     },
@@ -142,7 +142,7 @@
         "death": {
             "earliest": "1553-04-09",
             "latest": "1553-04-09",
-            "label": "09 Apr 1553",
+            "label": "09.04.1553",
             "label_year": "1553"
         }
     },
@@ -172,7 +172,7 @@
         "birth": {
             "earliest": "1431-04-01",
             "latest": "1432-04-19",
-            "label": "[01 Apr 1431, 19 Apr 1432]",
+            "label": "[01.04.1431, 19.04.1432]",
             "label_year": "1431/1432"
         },
         "death": {
@@ -196,13 +196,13 @@
         "birth": {
             "earliest": "1799-05-20",
             "latest": "1799-05-20",
-            "label": "20 May 1799",
+            "label": "20.05.1799",
             "label_year": "1799"
         },
         "death": {
             "earliest": "1850-08-18",
             "latest": "1850-08-18",
-            "label": "18 Aug 1850",
+            "label": "18.08.1850",
             "label_year": "1850"
         }
     },
@@ -220,13 +220,13 @@
         "birth": {
             "earliest": "1812-02-07",
             "latest": "1812-02-07",
-            "label": "07 Feb 1812",
+            "label": "07.02.1812",
             "label_year": "1812"
         },
         "death": {
             "earliest": "1870-06-09",
             "latest": "1870-06-09",
-            "label": "09 Jun 1870",
+            "label": "09.06.1870",
             "label_year": "1870"
         }
     }
