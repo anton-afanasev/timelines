@@ -39,10 +39,13 @@ class TimelineVisualization {
                 }
             });
             
-            // Ensure clear button is visible if we had selections
+            // Update clear button text and ensure visibility if needed
             const clearButton = document.getElementById('clearSelection');
-            if (clearButton && hasSelection) {
-                clearButton.style.display = 'block';
+            if (clearButton) {
+                clearButton.textContent = this.language === 'en' ? 'Clear selection' : 'Очистить выбранное';
+                if (hasSelection) {
+                    clearButton.style.display = 'block';
+                }
             }
             
             // Update visualization with maintained selection
@@ -223,14 +226,14 @@ class TimelineVisualization {
         
         const searchInput = document.createElement('input');
         searchInput.type = 'text';
-        searchInput.placeholder = 'Search people...';
-        searchInput.className = 'search-input';
+        searchInput.className = 'search-box';
+        searchInput.placeholder = this.language === 'en' ? 'Search' : 'Поиск';
         
         const dropdownContainer = document.createElement('div');
         dropdownContainer.className = 'dropdown-container';
         
         const clearButton = document.createElement('button');
-        clearButton.textContent = 'Clear selection';
+        clearButton.textContent = this.language === 'en' ? 'Clear selection' : 'Очистить выбранное';
         clearButton.id = 'clearSelection';
         clearButton.style.display = this.selectedPeople.size > 0 ? 'block' : 'none';
         clearButton.addEventListener('click', () => {
