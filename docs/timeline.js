@@ -83,20 +83,20 @@ class TimelineVisualization {
         if (this.selectedPeople.size === 0) {
             // If no people selected, show full range
             const allDates = this.people.flatMap(person => [
-                new Date(person.birth.earliest),
-                new Date(person.birth.latest),
-                new Date(person.death.earliest),
-                new Date(person.death.latest)
+                new Date(person.data.birth.earliest),
+                new Date(person.data.birth.latest),
+                new Date(person.data.death.earliest),
+                new Date(person.data.death.latest)
             ]);
             this.minDate = new Date(Math.min(...allDates));
             this.maxDate = new Date(Math.max(...allDates));
         } else {
             // Calculate range only for selected people
             const selectedDates = Array.from(this.selectedPeople).flatMap(person => [
-                new Date(person.birth.earliest),
-                new Date(person.birth.latest),
-                new Date(person.death.earliest),
-                new Date(person.death.latest)
+                new Date(person.data.birth.earliest),
+                new Date(person.data.birth.latest),
+                new Date(person.data.death.earliest),
+                new Date(person.data.death.latest)
             ]);
             this.minDate = new Date(Math.min(...selectedDates));
             this.maxDate = new Date(Math.max(...selectedDates));
@@ -145,21 +145,21 @@ class TimelineVisualization {
         const sortedPeople = Array.from(this.selectedPeople)
             .sort((a, b) => {
                 // First compare by birth date
-                const dateComparison = new Date(a.birth.earliest) - new Date(b.birth.earliest);
+                const dateComparison = new Date(a.data.birth.earliest) - new Date(b.data.birth.earliest);
                 if (dateComparison !== 0) return dateComparison;
 
                 // If birth dates are identical, compare names in order according to current language
-                if (a.name.last?.[this.language] !== b.name.last?.[this.language]) {
-                    return (a.name.last?.[this.language] || '').localeCompare(b.name.last?.[this.language] || '', this.language);
+                if (a.data.name.last?.[this.language] !== b.data.name.last?.[this.language]) {
+                    return (a.data.name.last?.[this.language] || '').localeCompare(b.data.name.last?.[this.language] || '', this.language);
                 }
-                if (a.name.first?.[this.language] !== b.name.first?.[this.language]) {
-                    return (a.name.first?.[this.language] || '').localeCompare(b.name.first?.[this.language] || '', this.language);
+                if (a.data.name.first?.[this.language] !== b.data.name.first?.[this.language]) {
+                    return (a.data.name.first?.[this.language] || '').localeCompare(b.data.name.first?.[this.language] || '', this.language);
                 }
-                if (a.name.middle?.[this.language] !== b.name.middle?.[this.language]) {
-                    return (a.name.middle?.[this.language] || '').localeCompare(b.name.middle?.[this.language] || '', this.language);
+                if (a.data.name.middle?.[this.language] !== b.data.name.middle?.[this.language]) {
+                    return (a.data.name.middle?.[this.language] || '').localeCompare(b.data.name.middle?.[this.language] || '', this.language);
                 }
-                if (a.name.patronymic?.[this.language] !== b.name.patronymic?.[this.language]) {
-                    return (a.name.patronymic?.[this.language] || '').localeCompare(b.name.patronymic?.[this.language] || '', this.language);
+                if (a.data.name.patronymic?.[this.language] !== b.data.name.patronymic?.[this.language]) {
+                    return (a.data.name.patronymic?.[this.language] || '').localeCompare(b.data.name.patronymic?.[this.language] || '', this.language);
                 }
                 return 0;
             });
@@ -170,7 +170,7 @@ class TimelineVisualization {
             
             const label = document.createElement('div');
             label.className = 'timeline-label';
-            label.textContent = person.name.short[this.language];
+            label.textContent = person.data.name.short[this.language];
             timeline.appendChild(label);
             
             const barWrapper = document.createElement('div');
@@ -179,8 +179,8 @@ class TimelineVisualization {
             const certainBar = document.createElement('div');
             certainBar.className = 'timeline-bar certain';
             
-            const earliestBirth = new Date(person.birth.latest);
-            const latestDeath = new Date(person.death.earliest);
+            const earliestBirth = new Date(person.data.birth.latest);
+            const latestDeath = new Date(person.data.death.earliest);
             
             const certainStartPosition = ((earliestBirth.getTime() - this.minDate.getTime()) / timeSpan) * 100;
             const certainWidth = ((latestDeath.getTime() - earliestBirth.getTime()) / timeSpan) * 100;
@@ -188,10 +188,10 @@ class TimelineVisualization {
             certainBar.style.left = `${certainStartPosition}%`;
             certainBar.style.width = `${certainWidth}%`;
             
-            if (person.birth.earliest !== person.birth.latest) {
+            if (person.data.birth.earliest !== person.data.birth.latest) {
                 const uncertainBirthBar = document.createElement('div');
                 uncertainBirthBar.className = 'timeline-bar uncertain left-uncertain';
-                const uncertainBirthStart = new Date(person.birth.earliest);
+                const uncertainBirthStart = new Date(person.data.birth.earliest);
                 const uncertainBirthWidth = ((earliestBirth.getTime() - uncertainBirthStart.getTime()) / timeSpan) * 100;
                 uncertainBirthBar.style.left = `${(uncertainBirthStart.getTime() - this.minDate.getTime()) / timeSpan * 100}%`;
                 uncertainBirthBar.style.width = `${uncertainBirthWidth}%`;
@@ -200,10 +200,10 @@ class TimelineVisualization {
             
             barWrapper.appendChild(certainBar);
             
-            if (person.death.earliest !== person.death.latest) {
+            if (person.data.death.earliest !== person.data.death.latest) {
                 const uncertainDeathBar = document.createElement('div');
                 uncertainDeathBar.className = 'timeline-bar uncertain right-uncertain';
-                const uncertainDeathEnd = new Date(person.death.latest);
+                const uncertainDeathEnd = new Date(person.data.death.latest);
                 const uncertainDeathWidth = ((uncertainDeathEnd.getTime() - latestDeath.getTime()) / timeSpan) * 100;
                 uncertainDeathBar.style.left = `${(latestDeath.getTime() - this.minDate.getTime()) / timeSpan * 100}%`;
                 uncertainDeathBar.style.width = `${uncertainDeathWidth}%`;
@@ -213,20 +213,20 @@ class TimelineVisualization {
             timeline.appendChild(barWrapper);
             
             // Create tooltip text with birth names and label dates
-            let tooltipText = person.name.full[this.language];
-            if (person.name.born) {
-                if (Array.isArray(person.name.born)) {
-                    const bornNames = person.name.born
+            let tooltipText = person.data.name.full[this.language];
+            if (person.data.name.born) {
+                if (Array.isArray(person.data.name.born)) {
+                    const bornNames = person.data.name.born
                         .map(n => n.full[this.language])
                         .join(' / ');
                     tooltipText += ` (${bornNames})`;
                 } else {
-                    tooltipText += ` (${person.name.born.full[this.language]})`;
+                    tooltipText += ` (${person.data.name.born.full[this.language]})`;
                 }
             }
-            tooltipText += `\n${person.birth.label} – ${person.death.label}`;
-            if (person.name.alias && person.name.alias.length > 0) {
-                const aliases = person.name.alias.map(a => a[this.language]).join(', ');
+            tooltipText += `\n${person.data.birth.label} – ${person.data.death.label}`;
+            if (person.data.name.alias && person.data.name.alias.length > 0) {
+                const aliases = person.data.name.alias.map(a => a[this.language]).join(', ');
                 const aliasLabel = this.language === 'en' ? 'Aliases' : 'Псевдонимы';
                 tooltipText += `\n${aliasLabel}: ${aliases}`;
             }
@@ -266,23 +266,23 @@ class TimelineVisualization {
         
         const sortedPeople = [...this.people].sort((a, b) => {
             // Compare last names in current language
-            if (a.name.last?.[this.language] !== b.name.last?.[this.language]) {
-                return (a.name.last?.[this.language] || '').localeCompare(b.name.last?.[this.language] || '', this.language);
+            if (a.data.name.last?.[this.language] !== b.data.name.last?.[this.language]) {
+                return (a.data.name.last?.[this.language] || '').localeCompare(b.data.name.last?.[this.language] || '', this.language);
             }
             // Compare first names
-            if (a.name.first?.[this.language] !== b.name.first?.[this.language]) {
-                return (a.name.first?.[this.language] || '').localeCompare(b.name.first?.[this.language] || '', this.language);
+            if (a.data.name.first?.[this.language] !== b.data.name.first?.[this.language]) {
+                return (a.data.name.first?.[this.language] || '').localeCompare(b.data.name.first?.[this.language] || '', this.language);
             }
             // Compare middle names if they exist
-            if (a.name.middle?.[this.language] !== b.name.middle?.[this.language]) {
-                return (a.name.middle?.[this.language] || '').localeCompare(b.name.middle?.[this.language] || '', this.language);
+            if (a.data.name.middle?.[this.language] !== b.data.name.middle?.[this.language]) {
+                return (a.data.name.middle?.[this.language] || '').localeCompare(b.data.name.middle?.[this.language] || '', this.language);
             }
             // Compare patronymics if they exist
-            if (a.name.patronymic?.[this.language] !== b.name.patronymic?.[this.language]) {
-                return (a.name.patronymic?.[this.language] || '').localeCompare(b.name.patronymic?.[this.language] || '', this.language);
+            if (a.data.name.patronymic?.[this.language] !== b.data.name.patronymic?.[this.language]) {
+                return (a.data.name.patronymic?.[this.language] || '').localeCompare(b.data.name.patronymic?.[this.language] || '', this.language);
             }
             // If all names are equal, sort by birth date
-            return new Date(a.birth.earliest) - new Date(b.birth.earliest);
+            return new Date(a.data.birth.earliest) - new Date(b.data.birth.earliest);
         });
         
         sortedPeople.forEach(person => {
@@ -309,11 +309,11 @@ class TimelineVisualization {
             label.htmlFor = person.id;
             
             const nameSpan = document.createElement('span');
-            nameSpan.textContent = person.name.sort[this.language];
+            nameSpan.textContent = person.data.name.sort[this.language];
             
             const yearsSpan = document.createElement('span');
             yearsSpan.className = 'years';
-            yearsSpan.textContent = ` (${person.birth.label_year} – ${person.death.label_year})`;
+            yearsSpan.textContent = ` (${person.data.birth.label_year} – ${person.data.death.label_year})`;
             
             label.appendChild(nameSpan);
             label.appendChild(yearsSpan);

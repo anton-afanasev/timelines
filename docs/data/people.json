@@ -1,467 +1,548 @@
 [
     {
         "id": "davincileonardo1452",
-        "name": {
-            "first": {
-                "en": "Leonardo",
-                "ru": "Леонардо"
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Leonardo",
+                    "ru": "Леонардо"
+                },
+                "last": {
+                    "en": "Vinci",
+                    "ru": "Винчи"
+                },
+                "particle": {
+                    "en": "da",
+                    "ru": "да"
+                },
+                "full": {
+                    "en": "Leonardo da Vinci",
+                    "ru": "Леонардо да Винчи"
+                },
+                "short": {
+                    "en": "Leonardo da Vinci",
+                    "ru": "Леонардо да Винчи"
+                },
+                "sort": {
+                    "en": "da Vinci, Leonardo",
+                    "ru": "да Винчи, Леонардо"
+                }
             },
-            "last": {
-                "en": "Vinci",
-                "ru": "Винчи"
+            "birth": {
+                "earliest": "1452-04-15",
+                "latest": "1452-04-15",
+                "label": "15.04.1452",
+                "label_year": "1452"
             },
-            "particle": {
-                "en": "da",
-                "ru": "да"
-            },
-            "full": {
-                "en": "Leonardo da Vinci",
-                "ru": "Леонардо да Винчи"
-            },
-            "short": {
-                "en": "Leonardo da Vinci",
-                "ru": "Леонардо да Винчи"
-            },
-            "sort": {
-                "en": "da Vinci, Leonardo",
-                "ru": "да Винчи, Леонардо"
+            "death": {
+                "earliest": "1519-05-02",
+                "latest": "1519-05-02",
+                "label": "02.05.1519",
+                "label_year": "1519"
             }
-        },
-        "birth": {
-            "earliest": "1452-04-15",
-            "latest": "1452-04-15",
-            "label": "15.04.1452",
-            "label_year": "1452"
-        },
-        "death": {
-            "earliest": "1519-05-02",
-            "latest": "1519-05-02",
-            "label": "02.05.1519",
-            "label_year": "1519"
         }
     },
     {
         "id": "clemensamuel1835",
-        "name": {
-            "first": {
-                "en": "Samuel",
-                "ru": "Сэмюэл"
-            },
-            "middle": {
-                "en": "Langhorne",
-                "ru": "Лэнгхорн"
-            },
-            "last": {
-                "en": "Clemens",
-                "ru": "Клеменс"
-            },
-            "full": {
-                "en": "Samuel Langhorne Clemens",
-                "ru": "Сэмюэл Лэнгхорн Клеменс"
-            },
-            "short": {
-                "en": "Mark Twain",
-                "ru": "Марк Твен"
-            },
-            "sort": {
-                "en": "Clemens, Samuel (Mark Twain)",
-                "ru": "Клеменс, Сэмюэл (Марк Твен)"
-            },
-            "alias": [
-                {
-                    "en": "Thomas Jefferson Snodgrass",
-                    "ru": "Томас Джефферсон Снодграсс"
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Samuel",
+                    "ru": "Сэмюэл"
                 },
-                {
-                    "en": "Josh",
-                    "ru": "Джош"
-                }
-            ]
-        },
-        "birth": {
-            "earliest": "1835-11-30",
-            "latest": "1835-11-30",
-            "label": "30.11.1835",
-            "label_year": "1835"
-        },
-        "death": {
-            "earliest": "1910-04-21",
-            "latest": "1910-04-21",
-            "label": "21.04.1910",
-            "label_year": "1910"
+                "middle": {
+                    "en": "Langhorne",
+                    "ru": "Лэнгхорн"
+                },
+                "last": {
+                    "en": "Clemens",
+                    "ru": "Клеменс"
+                },
+                "full": {
+                    "en": "Samuel Langhorne Clemens",
+                    "ru": "Сэмюэл Лэнгхорн Клеменс"
+                },
+                "short": {
+                    "en": "Mark Twain",
+                    "ru": "Марк Твен"
+                },
+                "sort": {
+                    "en": "Clemens, Samuel (Mark Twain)",
+                    "ru": "Клеменс, Сэмюэл (Марк Твен)"
+                },
+                "alias": [
+                    {
+                        "en": "Thomas Jefferson Snodgrass",
+                        "ru": "Томас Джефферсон Снодграсс"
+                    },
+                    {
+                        "en": "Josh",
+                        "ru": "Джош"
+                    }
+                ]
+            },
+            "birth": {
+                "earliest": "1835-11-30",
+                "latest": "1835-11-30",
+                "label": "30.11.1835",
+                "label_year": "1835"
+            },
+            "death": {
+                "earliest": "1910-04-21",
+                "latest": "1910-04-21",
+                "label": "21.04.1910",
+                "label_year": "1910"
+            }
         }
     },
     {
         "id": "churchillwinston1874",
-        "name": {
-            "first": {
-                "en": "Winston",
-                "ru": "Уинстон"
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Winston",
+                    "ru": "Уинстон"
+                },
+                "middle": {
+                    "en": "Leonard Spencer",
+                    "ru": "Леонард Спенсер"
+                },
+                "last": {
+                    "en": "Churchill",
+                    "ru": "Черчилль"
+                },
+                "full": {
+                    "en": "Winston Leonard Spencer Churchill",
+                    "ru": "Уинстон Леонард Спенсер Черчилль"
+                },
+                "short": {
+                    "en": "Winston Churchill",
+                    "ru": "Уинстон Черчилль"
+                },
+                "sort": {
+                    "en": "Churchill, Winston",
+                    "ru": "Черчилль, Уинстон"
+                }
             },
-            "middle": {
-                "en": "Leonard Spencer",
-                "ru": "Леонард Спенсер"
+            "birth": {
+                "earliest": "1874-11-30",
+                "latest": "1874-11-30",
+                "label": "30.11.1874",
+                "label_year": "1874"
             },
-            "last": {
-                "en": "Churchill",
-                "ru": "Черчилль"
-            },
-            "full": {
-                "en": "Winston Leonard Spencer Churchill",
-                "ru": "Уинстон Леонард Спенсер Черчилль"
-            },
-            "short": {
-                "en": "Winston Churchill",
-                "ru": "Уинстон Черчилль"
-            },
-            "sort": {
-                "en": "Churchill, Winston",
-                "ru": "Черчилль, Уинстон"
+            "death": {
+                "earliest": "1965-01-24",
+                "latest": "1965-01-24",
+                "label": "24.01.1965",
+                "label_year": "1965"
             }
-        },
-        "birth": {
-            "earliest": "1874-11-30",
-            "latest": "1874-11-30",
-            "label": "30.11.1874",
-            "label_year": "1874"
-        },
-        "death": {
-            "earliest": "1965-01-24",
-            "latest": "1965-01-24",
-            "label": "24.01.1965",
-            "label_year": "1965"
         }
     },
     {
         "id": "stalinjosephvissarionovich1878",
-        "name": {
-            "first": {
-                "en": "Joseph",
-                "ru": "Иосиф"
-            },
-            "last": {
-                "en": "Stalin",
-                "ru": "Сталин"
-            },
-            "patronymic": {
-                "en": "Vissarionovich",
-                "ru": "Виссарионович"
-            },
-            "born": {
+        "data": {
+            "name": {
                 "first": {
-                    "en": "Ioseb",
-                    "ru": "Иосеб"
+                    "en": "Joseph",
+                    "ru": "Иосиф"
                 },
                 "last": {
-                    "en": "Jughashvili",
-                    "ru": "Джугашвили"
+                    "en": "Stalin",
+                    "ru": "Сталин"
                 },
                 "patronymic": {
-                    "en": "Besarionis dze",
-                    "ru": "Бесарионис дзе"
+                    "en": "Vissarionovich",
+                    "ru": "Виссарионович"
+                },
+                "born": {
+                    "first": {
+                        "en": "Ioseb",
+                        "ru": "Иосеб"
+                    },
+                    "last": {
+                        "en": "Jughashvili",
+                        "ru": "Джугашвили"
+                    },
+                    "patronymic": {
+                        "en": "Besarionis dze",
+                        "ru": "Бесарионис дзе"
+                    },
+                    "full": {
+                        "en": "Ioseb Besarionis dze Jughashvili",
+                        "ru": "Иосеб Бесарионис дзе Джугашвили"
+                    }
                 },
                 "full": {
-                    "en": "Ioseb Besarionis dze Jughashvili",
-                    "ru": "Иосеб Бесарионис дзе Джугашвили"
-                }
-            },
-            "full": {
-                "en": "Joseph Vissarionovich Stalin",
-                "ru": "Иосиф Виссарионович Сталин"
-            },
-            "short": {
-                "en": "Joseph Stalin",
-                "ru": "Иосиф Сталин"
-            },
-            "sort": {
-                "en": "Stalin, Joseph",
-                "ru": "Сталин, Иосиф"
-            },
-            "alias": [
-                {
-                    "en": "Koba",
-                    "ru": "Коба"
+                    "en": "Joseph Vissarionovich Stalin",
+                    "ru": "Иосиф Виссарионович Сталин"
                 },
-                {
-                    "en": "Soso",
-                    "ru": "Сосо"
-                }
-            ]
-        },
-        "birth": {
-            "earliest": "1878-12-18",
-            "latest": "1878-12-18",
-            "label": "18.12.1878",
-            "label_year": "1878"
-        },
-        "death": {
-            "earliest": "1953-03-05",
-            "latest": "1953-03-05",
-            "label": "05.03.1953",
-            "label_year": "1953"
+                "short": {
+                    "en": "Joseph Stalin",
+                    "ru": "Иосиф Сталин"
+                },
+                "sort": {
+                    "en": "Stalin, Joseph",
+                    "ru": "Сталин, Иосиф"
+                },
+                "alias": [
+                    {
+                        "en": "Koba",
+                        "ru": "Коба"
+                    },
+                    {
+                        "en": "Soso",
+                        "ru": "Сосо"
+                    }
+                ]
+            },
+            "birth": {
+                "earliest": "1878-12-18",
+                "latest": "1878-12-18",
+                "label": "18.12.1878",
+                "label_year": "1878"
+            },
+            "death": {
+                "earliest": "1953-03-05",
+                "latest": "1953-03-05",
+                "label": "05.03.1953",
+                "label_year": "1953"
+            }
         }
     },
     {
         "id": "rooseveltfranklin1882",
-        "name": {
-            "first": {
-                "en": "Franklin",
-                "ru": "Франклин"
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Franklin",
+                    "ru": "Франклин"
+                },
+                "middle": {
+                    "en": "Delano",
+                    "ru": "Делано"
+                },
+                "last": {
+                    "en": "Roosevelt",
+                    "ru": "Рузвельт"
+                },
+                "full": {
+                    "en": "Franklin Delano Roosevelt",
+                    "ru": "Франклин Делано Рузвельт"
+                },
+                "short": {
+                    "en": "Franklin Roosevelt",
+                    "ru": "Франклин Рузвельт"
+                },
+                "sort": {
+                    "en": "Roosevelt, Franklin",
+                    "ru": "Рузвельт, Франклин"
+                },
+                "alias": [
+                    {
+                        "en": "FDR",
+                        "ru": "ФДР"
+                    }
+                ]
             },
-            "middle": {
-                "en": "Delano",
-                "ru": "Делано"
+            "birth": {
+                "earliest": "1882-01-30",
+                "latest": "1882-01-30",
+                "label": "30.01.1882",
+                "label_year": "1882"
             },
-            "last": {
-                "en": "Roosevelt",
-                "ru": "Рузвельт"
-            },
-            "full": {
-                "en": "Franklin Delano Roosevelt",
-                "ru": "Франклин Делано Рузвельт"
-            },
-            "short": {
-                "en": "Franklin Roosevelt",
-                "ru": "Франклин Рузвельт"
-            },
-            "sort": {
-                "en": "Roosevelt, Franklin",
-                "ru": "Рузвельт, Франклин"
-            },
-            "alias": [
-                {
-                    "en": "FDR",
-                    "ru": "ФДР"
-                }
-            ]
-        },
-        "birth": {
-            "earliest": "1882-01-30",
-            "latest": "1882-01-30",
-            "label": "30.01.1882",
-            "label_year": "1882"
-        },
-        "death": {
-            "earliest": "1945-04-12",
-            "latest": "1945-04-12",
-            "label": "12.04.1945",
-            "label_year": "1945"
+            "death": {
+                "earliest": "1945-04-12",
+                "latest": "1945-04-12",
+                "label": "12.04.1945",
+                "label_year": "1945"
+            }
         }
     },
     {
         "id": "rabelaisfrancois1483",
-        "name": {
-            "first": {
-                "en": "François",
-                "ru": "Франсуа"
+        "data": {
+            "name": {
+                "first": {
+                    "en": "François",
+                    "ru": "Франсуа"
+                },
+                "last": {
+                    "en": "Rabelais",
+                    "ru": "Рабле"
+                },
+                "full": {
+                    "en": "François Rabelais",
+                    "ru": "Франсуа Рабле"
+                },
+                "short": {
+                    "en": "François Rabelais",
+                    "ru": "Франсуа Рабле"
+                },
+                "sort": {
+                    "en": "Rabelais, François",
+                    "ru": "Рабле, Франсуа"
+                },
+                "alias": [
+                    {
+                        "en": "Alcofribas Nasier",
+                        "ru": "Алькофрибас Назье"
+                    }
+                ]
             },
-            "last": {
-                "en": "Rabelais",
-                "ru": "Рабле"
+            "birth": {
+                "earliest": "1483-01-01",
+                "latest": "1494-12-31",
+                "label": "[1483, 1494]",
+                "label_year": "1483/1494"
             },
-            "full": {
-                "en": "François Rabelais",
-                "ru": "Франсуа Рабле"
-            },
-            "short": {
-                "en": "François Rabelais",
-                "ru": "Франсуа Рабле"
-            },
-            "sort": {
-                "en": "Rabelais, François",
-                "ru": "Рабле, Франсуа"
-            },
-            "alias": [
-                {
-                    "en": "Alcofribas Nasier",
-                    "ru": "Алькофрибас Назье"
-                }
-            ]
-        },
-        "birth": {
-            "earliest": "1483-01-01",
-            "latest": "1494-12-31",
-            "label": "[1483, 1494]",
-            "label_year": "1483/1494"
-        },
-        "death": {
-            "earliest": "1553-04-09",
-            "latest": "1553-04-09",
-            "label": "09.04.1553",
-            "label_year": "1553"
+            "death": {
+                "earliest": "1553-04-09",
+                "latest": "1553-04-09",
+                "label": "09.04.1553",
+                "label_year": "1553"
+            }
         }
     },
     {
         "id": "villonfrancois1431",
-        "name": {
-            "first": {
-                "en": "François",
-                "ru": "Франсуа"
-            },
-            "last": {
-                "en": "Villon",
-                "ru": "Вийон"
-            },
-            "born": [
-                {
-                    "first": {
-                        "en": "François",
-                        "ru": "Франсуа"
-                    },
-                    "last": {
-                        "en": "Montcorbier",
-                        "ru": "Монкорбье"
-                    },
-                    "particle": {
-                        "en": "de",
-                        "ru": "де"
-                    },
-                    "full": {
-                        "en": "François de Montcorbier",
-                        "ru": "Франсуа де Монкорбье"
-                    }
+        "data": {
+            "name": {
+                "first": {
+                    "en": "François",
+                    "ru": "Франсуа"
                 },
-                {
-                    "first": {
-                        "en": "François",
-                        "ru": "Франсуа"
+                "last": {
+                    "en": "Villon",
+                    "ru": "Вийон"
+                },
+                "born": [
+                    {
+                        "first": {
+                            "en": "François",
+                            "ru": "Франсуа"
+                        },
+                        "last": {
+                            "en": "Montcorbier",
+                            "ru": "Монкорбье"
+                        },
+                        "particle": {
+                            "en": "de",
+                            "ru": "де"
+                        },
+                        "full": {
+                            "en": "François de Montcorbier",
+                            "ru": "Франсуа де Монкорбье"
+                        }
                     },
-                    "last": {
-                        "en": "Loges",
-                        "ru": "Лож"
-                    },
-                    "particle": {
-                        "en": "des",
-                        "ru": "де"
-                    },
-                    "full": {
-                        "en": "François des Loges",
-                        "ru": "Франсуа де Лож"
+                    {
+                        "first": {
+                            "en": "François",
+                            "ru": "Франсуа"
+                        },
+                        "last": {
+                            "en": "Loges",
+                            "ru": "Лож"
+                        },
+                        "particle": {
+                            "en": "des",
+                            "ru": "де"
+                        },
+                        "full": {
+                            "en": "François des Loges",
+                            "ru": "Франсуа де Лож"
+                        }
                     }
+                ],
+                "full": {
+                    "en": "François Villon",
+                    "ru": "Франсуа Вийон"
+                },
+                "short": {
+                    "en": "François Villon",
+                    "ru": "Франсуа Вийон"
+                },
+                "sort": {
+                    "en": "Villon, François",
+                    "ru": "Вийон, Франсуа"
                 }
-            ],
-            "full": {
-                "en": "François Villon",
-                "ru": "Франсуа Вийон"
             },
-            "short": {
-                "en": "François Villon",
-                "ru": "Франсуа Вийон"
+            "birth": {
+                "earliest": "1431-04-01",
+                "latest": "1432-04-19",
+                "label": "[01.04.1431, 19.04.1432]",
+                "label_year": "1431/1432"
             },
-            "sort": {
-                "en": "Villon, François",
-                "ru": "Вийон, Франсуа"
+            "death": {
+                "earliest": "1463-01-01",
+                "latest": "1465-12-31",
+                "label": "[1463, 1465]",
+                "label_year": "1463/1465"
             }
-        },
-        "birth": {
-            "earliest": "1431-04-01",
-            "latest": "1432-04-19",
-            "label": "[01.04.1431, 19.04.1432]",
-            "label_year": "1431/1432"
-        },
-        "death": {
-            "earliest": "1463-01-01",
-            "latest": "1465-12-31",
-            "label": "[1463, 1465]",
-            "label_year": "1463/1465"
         }
     },
     {
         "id": "debalzachonore1799",
-        "name": {
-            "first": {
-                "en": "Honoré",
-                "ru": "Оноре"
-            },
-            "last": {
-                "en": "Balzac",
-                "ru": "Бальзак"
-            },
-            "particle": {
-                "en": "de",
-                "ru": "де"
-            },
-            "full": {
-                "en": "Honoré de Balzac",
-                "ru": "Оноре де Бальзак"
-            },
-            "short": {
-                "en": "Honoré de Balzac",
-                "ru": "Оноре де Бальзак"
-            },
-            "sort": {
-                "en": "de Balzac, Honoré",
-                "ru": "де Бальзак, Оноре"
-            },
-            "alias": [
-                {
-                    "en": "Horace de Saint-Aubin",
-                    "ru": "Орас де Сент-Обен"
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Honoré",
+                    "ru": "Оноре"
                 },
-                {
-                    "en": "Lord R'hoone",
-                    "ru": "Лорд Р'оон"
-                }
-            ]
-        },
-        "birth": {
-            "earliest": "1799-05-20",
-            "latest": "1799-05-20",
-            "label": "20.05.1799",
-            "label_year": "1799"
-        },
-        "death": {
-            "earliest": "1850-08-18",
-            "latest": "1850-08-18",
-            "label": "18.08.1850",
-            "label_year": "1850"
+                "last": {
+                    "en": "Balzac",
+                    "ru": "Бальзак"
+                },
+                "particle": {
+                    "en": "de",
+                    "ru": "де"
+                },
+                "full": {
+                    "en": "Honoré de Balzac",
+                    "ru": "Оноре де Бальзак"
+                },
+                "short": {
+                    "en": "Honoré de Balzac",
+                    "ru": "Оноре де Бальзак"
+                },
+                "sort": {
+                    "en": "de Balzac, Honoré",
+                    "ru": "де Бальзак, Оноре"
+                },
+                "alias": [
+                    {
+                        "en": "Horace de Saint-Aubin",
+                        "ru": "Орас де Сент-Обен"
+                    },
+                    {
+                        "en": "Lord R'hoone",
+                        "ru": "Лорд Р'оон"
+                    }
+                ]
+            },
+            "birth": {
+                "earliest": "1799-05-20",
+                "latest": "1799-05-20",
+                "label": "20.05.1799",
+                "label_year": "1799"
+            },
+            "death": {
+                "earliest": "1850-08-18",
+                "latest": "1850-08-18",
+                "label": "18.08.1850",
+                "label_year": "1850"
+            }
         }
     },
     {
         "id": "dickenscharles1812",
-        "name": {
-            "first": {
-                "en": "Charles",
-                "ru": "Чарльз"
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Charles",
+                    "ru": "Чарльз"
+                },
+                "middle": {
+                    "en": "John Huffam",
+                    "ru": "Джон Хаффем"
+                },
+                "last": {
+                    "en": "Dickens",
+                    "ru": "Диккенс"
+                },
+                "full": {
+                    "en": "Charles John Huffam Dickens",
+                    "ru": "Чарльз Джон Хаффем Диккенс"
+                },
+                "short": {
+                    "en": "Charles Dickens",
+                    "ru": "Чарльз Диккенс"
+                },
+                "sort": {
+                    "en": "Dickens, Charles",
+                    "ru": "Диккенс, Чарльз"
+                },
+                "alias": [
+                    {
+                        "en": "Boz",
+                        "ru": "Боз"
+                    }
+                ]
             },
-            "middle": {
-                "en": "John Huffam",
-                "ru": "Джон Хаффем"
+            "birth": {
+                "earliest": "1812-02-07",
+                "latest": "1812-02-07",
+                "label": "07.02.1812",
+                "label_year": "1812"
             },
-            "last": {
-                "en": "Dickens",
-                "ru": "Диккенс"
-            },
-            "full": {
-                "en": "Charles John Huffam Dickens",
-                "ru": "Чарльз Джон Хаффем Диккенс"
-            },
-            "short": {
-                "en": "Charles Dickens",
-                "ru": "Чарльз Диккенс"
-            },
-            "sort": {
-                "en": "Dickens, Charles",
-                "ru": "Диккенс, Чарльз"
-            },
-            "alias": [
-                {
-                    "en": "Boz",
-                    "ru": "Боз"
+            "death": {
+                "earliest": "1870-06-09",
+                "latest": "1870-06-09",
+                "label": "09.06.1870",
+                "label_year": "1870"
+            }
+        }
+    },
+    {
+        "id": "petrovavvakum1620",
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Avvakum",
+                    "ru": "Аввакум"
+                },
+                "last": {
+                    "en": "Petrov",
+                    "ru": "Петров"
+                },
+                "patronymic": {
+                    "en": "Petrovich",
+                    "ru": "Петрович"
+                },
+                "born": [
+                    {
+                        "first": {
+                            "en": "Avvakum",
+                            "ru": "Аввакум"
+                        },
+                        "last": {
+                            "en": "Kondratiev",
+                            "ru": "Кондратьев"
+                        },
+                        "patronymic": {
+                            "en": "Petrovich",
+                            "ru": "Петрович"
+                        },
+                        "full": {
+                            "en": "Avvakum Petrovich Kondratiev",
+                            "ru": "Аввакум Петрович Кондратьев"
+                        }
+                    }
+                ],
+                "full": {
+                    "en": "Avvakum Petrovich Petrov",
+                    "ru": "Аввакум Петрович Петров"
+                },
+                "short": {
+                    "en": "Avvakum Petrov",
+                    "ru": "Аввакум Петров"
+                },
+                "sort": {
+                    "en": "Petrov, Avvakum",
+                    "ru": "Петров, Аввакум"
                 }
-            ]
-        },
-        "birth": {
-            "earliest": "1812-02-07",
-            "latest": "1812-02-07",
-            "label": "07.02.1812",
-            "label_year": "1812"
-        },
-        "death": {
-            "earliest": "1870-06-09",
-            "latest": "1870-06-09",
-            "label": "09.06.1870",
-            "label_year": "1870"
+            },
+            "birth": {
+                "earliest": "1620-12-05",
+                "latest": "1620-12-05",
+                "label": "05.12.1620",
+                "label_year": "1620"
+            },
+            "death": {
+                "earliest": "1682-04-24",
+                "latest": "1682-04-24",
+                "label": "24.04.1682",
+                "label_year": "1682"
+            }
         }
     }
 ] 
