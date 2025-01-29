@@ -27,9 +27,6 @@
                 "ru": "да Винчи, Леонардо"
             }
         },
-        "nationality": "Italian",
-        "mainLanguage": "Italian",
-        "languages": ["Italian", "Latin"],
         "birth": {
             "earliest": "1452-04-15",
             "latest": "1452-04-15",
@@ -81,9 +78,6 @@
                 }
             ]
         },
-        "nationality": "American",
-        "mainLanguage": "English",
-        "languages": ["English"],
         "birth": {
             "earliest": "1835-11-30",
             "latest": "1835-11-30",
@@ -125,9 +119,6 @@
                 "ru": "Черчилль, Уинстон"
             }
         },
-        "nationality": "British",
-        "mainLanguage": "English",
-        "languages": ["English", "French"],
         "birth": {
             "earliest": "1874-11-30",
             "latest": "1874-11-30",
@@ -197,9 +188,6 @@
                 }
             ]
         },
-        "nationality": "Georgian",
-        "mainLanguage": "Russian",
-        "languages": ["Georgian", "Russian"],
         "birth": {
             "earliest": "1878-12-18",
             "latest": "1878-12-18",
@@ -247,9 +235,6 @@
                 }
             ]
         },
-        "nationality": "American",
-        "mainLanguage": "English",
-        "languages": ["English"],
         "birth": {
             "earliest": "1882-01-30",
             "latest": "1882-01-30",
@@ -293,14 +278,11 @@
                 }
             ]
         },
-        "nationality": "French",
-        "mainLanguage": "French",
-        "languages": ["French", "Latin"],
         "birth": {
-            "earliest": "1483-02-06",
-            "latest": "1483-02-06",
-            "label": "06.02.1483",
-            "label_year": "1483"
+            "earliest": "1483-01-01",
+            "latest": "1494-12-31",
+            "label": "[1483, 1494]",
+            "label_year": "1483/1494"
         },
         "death": {
             "earliest": "1553-04-09",
@@ -371,20 +353,17 @@
                 "ru": "Вийон, Франсуа"
             }
         },
-        "nationality": "French",
-        "mainLanguage": "French",
-        "languages": ["French"],
         "birth": {
             "earliest": "1431-04-01",
-            "latest": "1431-04-01",
-            "label": "01.04.1431",
-            "label_year": "1431"
+            "latest": "1432-04-19",
+            "label": "[01.04.1431, 19.04.1432]",
+            "label_year": "1431/1432"
         },
         "death": {
             "earliest": "1463-01-01",
-            "latest": "1463-01-01",
-            "label": "01.01.1463",
-            "label_year": "1463"
+            "latest": "1465-12-31",
+            "label": "[1463, 1465]",
+            "label_year": "1463/1465"
         }
     },
     {
@@ -425,9 +404,6 @@
                 }
             ]
         },
-        "nationality": "French",
-        "mainLanguage": "French",
-        "languages": ["French", "Latin"],
         "birth": {
             "earliest": "1799-05-20",
             "latest": "1799-05-20",
@@ -475,9 +451,6 @@
                 }
             ]
         },
-        "nationality": "British",
-        "mainLanguage": "English",
-        "languages": ["English"],
         "birth": {
             "earliest": "1812-02-07",
             "latest": "1812-02-07",
@@ -489,90 +462,6 @@
             "latest": "1870-06-09",
             "label": "09.06.1870",
             "label_year": "1870"
-        }
-    },
-    {
-        "id": "shakespearewilliam1564",
-        "name": {
-            "first": {
-                "en": "William",
-                "ru": "Уильям"
-            },
-            "last": {
-                "en": "Shakespeare",
-                "ru": "Шекспир"
-            },
-            "full": {
-                "en": "William Shakespeare",
-                "ru": "Уильям Шекспир"
-            },
-            "short": {
-                "en": "William Shakespeare",
-                "ru": "Уильям Шекспир"
-            },
-            "sort": {
-                "en": "Shakespeare, William",
-                "ru": "Шекспир, Уильям"
-            }
-        },
-        "nationality": "English",
-        "mainLanguage": "English",
-        "languages": ["English"],
-        "birth": {
-            "earliest": "1564-04-23",
-            "latest": "1564-04-23",
-            "label": "23.04.1564",
-            "label_year": "1564"
-        },
-        "death": {
-            "earliest": "1616-04-23",
-            "latest": "1616-04-23",
-            "label": "23.04.1616",
-            "label_year": "1616"
-        }
-    },
-    {
-        "id": "tolstoyleo1828",
-        "name": {
-            "first": {
-                "en": "Leo",
-                "ru": "Лев"
-            },
-            "last": {
-                "en": "Tolstoy",
-                "ru": "Толстой"
-            },
-            "patronymic": {
-                "en": "Nikolaevich",
-                "ru": "Николаевич"
-            },
-            "full": {
-                "en": "Leo Nikolaevich Tolstoy",
-                "ru": "Лев Николаевич Толстой"
-            },
-            "short": {
-                "en": "Leo Tolstoy",
-                "ru": "Лев Толстой"
-            },
-            "sort": {
-                "en": "Tolstoy, Leo",
-                "ru": "Толстой, Лев"
-            }
-        },
-        "nationality": "Russian",
-        "mainLanguage": "Russian",
-        "languages": ["Russian", "French"],
-        "birth": {
-            "earliest": "1828-09-09",
-            "latest": "1828-09-09",
-            "label": "09.09.1828",
-            "label_year": "1828"
-        },
-        "death": {
-            "earliest": "1910-11-20",
-            "latest": "1910-11-20",
-            "label": "20.11.1910",
-            "label_year": "1910"
         }
     }
 ] 
