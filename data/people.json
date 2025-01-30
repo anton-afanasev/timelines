@@ -544,5 +544,345 @@
                 "label_year": "1682"
             }
         }
+    },
+    {
+        "id": "tatishchevvasily1686",
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Vasily",
+                    "ru": "Василий"
+                },
+                "last": {
+                    "en": "Tatishchev",
+                    "ru": "Татищев"
+                },
+                "patronymic": {
+                    "en": "Nikitich",
+                    "ru": "Никитич"
+                },
+                "full": {
+                    "en": "Tatishchev Vasily Nikitich",
+                    "ru": "Татищев Василий Никитич"
+                },
+                "short": {
+                    "en": "Vasily Tatishchev",
+                    "ru": "Василий Татищев"
+                },
+                "sort": {
+                    "en": "Tatishchev, Vasily",
+                    "ru": "Татищев, Василий"
+                }
+            },
+            "birth": {
+                "earliest": "1686-04-19",
+                "latest": "1686-04-19",
+                "label": "19.04.1686",
+                "label_year": "1686"
+            },
+            "death": {
+                "earliest": "1750-07-15",
+                "latest": "1750-07-15",
+                "label": "15.07.1750",
+                "label_year": "1750"
+            }
+        }
+    },
+    {
+        "id": "trediakovskyvasily1703",
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Vasily",
+                    "ru": "Василий"
+                },
+                "last": {
+                    "en": "Trediakovsky",
+                    "ru": "Тредиаковский"
+                },
+                "patronymic": {
+                    "en": "Kirillovich",
+                    "ru": "Кириллович"
+                },
+                "full": {
+                    "en": "Trediakovsky Vasily Kirillovich",
+                    "ru": "Тредиаковский Василий Кириллович"
+                },
+                "short": {
+                    "en": "Vasily Trediakovsky",
+                    "ru": "Василий Тредиаковский"
+                },
+                "sort": {
+                    "en": "Trediakovsky, Vasily",
+                    "ru": "Тредиаковский, Василий"
+                }
+            },
+            "birth": {
+                "earliest": "1703-03-05",
+                "latest": "1703-03-05",
+                "label": "05.03.1703",
+                "label_year": "1703"
+            },
+            "death": {
+                "earliest": "1769-08-17",
+                "latest": "1769-08-17",
+                "label": "17.08.1769",
+                "label_year": "1769"
+            }
+        }
+    },
+    {
+        "id": "kantemirantiochus1709",
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Antiochus",
+                    "ru": "Антиох"
+                },
+                "last": {
+                    "en": "Kantemir",
+                    "ru": "Кантемир"
+                },
+                "patronymic": {
+                    "en": "Dmitrievich",
+                    "ru": "Дмитриевич"
+                },
+                "full": {
+                    "en": "Kantemir Antiochus Dmitrievich",
+                    "ru": "Кантемир Антиох Дмитриевич"
+                },
+                "short": {
+                    "en": "Antiochus Kantemir",
+                    "ru": "Антиох Кантемир"
+                },
+                "sort": {
+                    "en": "Kantemir, Antiochus",
+                    "ru": "Кантемир, Антиох"
+                }
+            },
+            "birth": {
+                "earliest": "1709-09-21",
+                "latest": "1709-09-21",
+                "label": "21.09.1709",
+                "label_year": "1709"
+            },
+            "death": {
+                "earliest": "1744-04-11",
+                "latest": "1744-04-11",
+                "label": "11.04.1744",
+                "label_year": "1744"
+            }
+        }
+    },
+    {
+        "id": "lomonosovmikhail1711",
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Mikhail",
+                    "ru": "Михаил"
+                },
+                "last": {
+                    "en": "Lomonosov",
+                    "ru": "Ломоносов"
+                },
+                "patronymic": {
+                    "en": "Vasilyevich",
+                    "ru": "Васильевич"
+                },
+                "full": {
+                    "en": "Lomonosov Mikhail Vasilyevich",
+                    "ru": "Ломоносов Михаил Васильевич"
+                },
+                "short": {
+                    "en": "Mikhail Lomonosov",
+                    "ru": "Михаил Ломоносов"
+                },
+                "sort": {
+                    "en": "Lomonosov, Mikhail",
+                    "ru": "Ломоносов, Михаил"
+                }
+            },
+            "birth": {
+                "earliest": "1711-11-19",
+                "latest": "1711-11-19",
+                "label": "19.11.1711",
+                "label_year": "1711"
+            },
+            "death": {
+                "earliest": "1765-04-15",
+                "latest": "1765-04-15",
+                "label": "15.04.1765",
+                "label_year": "1765"
+            }
+        }
+    },
+    {
+        "id": "sumarokovalexander1717",
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Alexander",
+                    "ru": "Александр"
+                },
+                "last": {
+                    "en": "Sumarokov",
+                    "ru": "Сумароков"
+                },
+                "patronymic": {
+                    "en": "Petrovich",
+                    "ru": "Петрович"
+                },
+                "full": {
+                    "en": "Sumarokov Alexander Petrovich",
+                    "ru": "Сумароков Александр Петрович"
+                },
+                "short": {
+                    "en": "Alexander Sumarokov",
+                    "ru": "Александр Сумароков"
+                },
+                "sort": {
+                    "en": "Sumarokov, Alexander",
+                    "ru": "Сумароков, Александр"
+                }
+            },
+            "birth": {
+                "earliest": "1717-11-25",
+                "latest": "1717-11-25",
+                "label": "25.11.1717",
+                "label_year": "1717"
+            },
+            "death": {
+                "earliest": "1777-10-12",
+                "latest": "1777-10-12",
+                "label": "12.10.1777",
+                "label_year": "1777"
+            }
+        }
+    },
+    {
+        "id": "maykovvasily1728",
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Vasily",
+                    "ru": "Василий"
+                },
+                "last": {
+                    "en": "Maykov",
+                    "ru": "Майков"
+                },
+                "patronymic": {
+                    "en": "Ivanovich",
+                    "ru": "Иванович"
+                },
+                "full": {
+                    "en": "Maykov Vasily Ivanovich",
+                    "ru": "Майков Василий Иванович"
+                },
+                "short": {
+                    "en": "Vasily Maykov",
+                    "ru": "Василий Майков"
+                },
+                "sort": {
+                    "en": "Maykov, Vasily",
+                    "ru": "Майков, Василий"
+                }
+            },
+            "birth": {
+                "earliest": "1728-01-01",
+                "latest": "1728-12-31",
+                "label": "1728",
+                "label_year": "1728"
+            },
+            "death": {
+                "earliest": "1778-06-28",
+                "latest": "1778-06-28",
+                "label": "28.06.1778",
+                "label_year": "1778"
+            }
+        }
+    },
+    {
+        "id": "skovorodahryhorii1722",
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Hryhorii",
+                    "ru": "Григорий"
+                },
+                "last": {
+                    "en": "Skovoroda",
+                    "ru": "Сковорода"
+                },
+                "patronymic": {
+                    "en": "Savych",
+                    "ru": "Саввич"
+                },
+                "full": {
+                    "en": "Skovoroda Hryhorii Savych",
+                    "ru": "Сковорода Григорий Саввич"
+                },
+                "short": {
+                    "en": "Hryhorii Skovoroda",
+                    "ru": "Григорий Сковорода"
+                },
+                "sort": {
+                    "en": "Skovoroda, Hryhorii",
+                    "ru": "Сковорода, Григорий"
+                }
+            },
+            "birth": {
+                "earliest": "1722-12-03",
+                "latest": "1722-12-03",
+                "label": "03.12.1722",
+                "label_year": "1722"
+            },
+            "death": {
+                "earliest": "1794-11-09",
+                "latest": "1794-11-09",
+                "label": "09.11.1794",
+                "label_year": "1794"
+            }
+        }
+    },
+    {
+        "id": "komarovmatvei1730",
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Matvei",
+                    "ru": "Матвей"
+                },
+                "last": {
+                    "en": "Komarov",
+                    "ru": "Комаров"
+                },
+                "full": {
+                    "en": "Komarov Matvei",
+                    "ru": "Комаров Матвей"
+                },
+                "short": {
+                    "en": "Matvei Komarov",
+                    "ru": "Матвей Комаров"
+                },
+                "sort": {
+                    "en": "Komarov, Matvei",
+                    "ru": "Комаров, Матвей"
+                }
+            },
+            "birth": {
+                "earliest": "1730-01-01",
+                "latest": "1738-12-31",
+                "label": "[1730, 1738]",
+                "label_year": "1730/1738"
+            },
+            "death": {
+                "earliest": "1812-01-01",
+                "latest": "1815-12-31",
+                "label": "[1812, 1815]",
+                "label_year": "1812/1815"
+            }
+        }
     }
 ] 
