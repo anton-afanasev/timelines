@@ -884,5 +884,220 @@
                 "label_year": "1812/1815"
             }
         }
+    },
+    {
+        "id": "veltmanalexander1800",
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Alexander",
+                    "ru": "Александр"
+                },
+                "last": {
+                    "en": "Veltman",
+                    "ru": "Вельтман"
+                },
+                "patronymic": {
+                    "en": "Fomich",
+                    "ru": "Фомич"
+                },
+                "full": {
+                    "en": "Veltman Alexander Fomich",
+                    "ru": "Вельтман Александр Фомич"
+                },
+                "short": {
+                    "en": "Alexander Veltman",
+                    "ru": "Александр Вельтман"
+                },
+                "sort": {
+                    "en": "Veltman, Alexander",
+                    "ru": "Вельтман, Александр"
+                }
+            },
+            "birth": {
+                "earliest": "1800-07-20",
+                "latest": "1800-07-20",
+                "label": "20.07.1800",
+                "label_year": "1800"
+            },
+            "death": {
+                "earliest": "1870-01-23",
+                "latest": "1870-01-23",
+                "label": "23.01.1870",
+                "label_year": "1870"
+            }
+        }
+    },
+    {
+        "id": "zagoskinmikhail1789",
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Mikhail",
+                    "ru": "Михаил"
+                },
+                "last": {
+                    "en": "Zagoskin",
+                    "ru": "Загоскин"
+                },
+                "patronymic": {
+                    "en": "Nikolayevich",
+                    "ru": "Николаевич"
+                },
+                "full": {
+                    "en": "Zagoskin Mikhail Nikolayevich",
+                    "ru": "Загоскин Михаил Николаевич"
+                },
+                "short": {
+                    "en": "Mikhail Zagoskin",
+                    "ru": "Михаил Загоскин"
+                },
+                "sort": {
+                    "en": "Zagoskin, Mikhail",
+                    "ru": "Загоскин, Михаил"
+                }
+            },
+            "birth": {
+                "earliest": "1789-07-25",
+                "latest": "1789-07-25",
+                "label": "25.07.1789",
+                "label_year": "1789"
+            },
+            "death": {
+                "earliest": "1852-07-05",
+                "latest": "1852-07-05",
+                "label": "05.07.1852",
+                "label_year": "1852"
+            }
+        }
+    },
+    {
+        "id": "polevoynikolai1796",
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Nikolai",
+                    "ru": "Николай"
+                },
+                "last": {
+                    "en": "Polevoy",
+                    "ru": "Полевой"
+                },
+                "patronymic": {
+                    "en": "Alekseevich",
+                    "ru": "Алексеевич"
+                },
+                "full": {
+                    "en": "Polevoy Nikolai Alekseevich",
+                    "ru": "Полевой Николай Алексеевич"
+                },
+                "short": {
+                    "en": "Nikolai Polevoy",
+                    "ru": "Николай Полевой"
+                },
+                "sort": {
+                    "en": "Polevoy, Nikolai",
+                    "ru": "Полевой, Николай"
+                }
+            },
+            "birth": {
+                "earliest": "1796-07-03",
+                "latest": "1796-07-03",
+                "label": "03.07.1796",
+                "label_year": "1796"
+            },
+            "death": {
+                "earliest": "1846-03-06",
+                "latest": "1846-03-06",
+                "label": "06.03.1846",
+                "label_year": "1846"
+            }
+        }
+    },
+    {
+        "id": "lazhechnikovivan1792",
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Ivan",
+                    "ru": "Иван"
+                },
+                "last": {
+                    "en": "Lazhechnikov",
+                    "ru": "Лажечников"
+                },
+                "patronymic": {
+                    "en": "Ivanovich",
+                    "ru": "Иванович"
+                },
+                "full": {
+                    "en": "Lazhechnikov Ivan Ivanovich",
+                    "ru": "Лажечников Иван Иванович"
+                },
+                "short": {
+                    "en": "Ivan Lazhechnikov",
+                    "ru": "Иван Лажечников"
+                },
+                "sort": {
+                    "en": "Lazhechnikov, Ivan",
+                    "ru": "Лажечников, Иван"
+                }
+            },
+            "birth": {
+                "earliest": "1792-09-25",
+                "latest": "1792-09-25",
+                "label": "25.09.1792",
+                "label_year": "1792"
+            },
+            "death": {
+                "earliest": "1869-07-08",
+                "latest": "1869-07-08",
+                "label": "08.07.1869",
+                "label_year": "1869"
+            }
+        }
+    },
+    {
+        "id": "narezhnyvasily1780",
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Vasily",
+                    "ru": "Василий"
+                },
+                "last": {
+                    "en": "Narezhny",
+                    "ru": "Нарежный"
+                },
+                "patronymic": {
+                    "en": "Trofimovich",
+                    "ru": "Трофимович"
+                },
+                "full": {
+                    "en": "Narezhny Vasily Trofimovich",
+                    "ru": "Нарежный Василий Трофимович"
+                },
+                "short": {
+                    "en": "Vasily Narezhny",
+                    "ru": "Василий Нарежный"
+                },
+                "sort": {
+                    "en": "Narezhny, Vasily",
+                    "ru": "Нарежный, Василий"
+                }
+            },
+            "birth": {
+                "earliest": "1780-01-01",
+                "latest": "1780-12-31",
+                "label": "1780",
+                "label_year": "1780"
+            },
+            "death": {
+                "earliest": "1825-07-03",
+                "latest": "1825-07-03",
+                "label": "03.07.1825",
+                "label_year": "1825"
+            }
+        }
     }
 ] 
