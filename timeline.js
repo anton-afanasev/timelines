@@ -188,6 +188,17 @@ class TimelineVisualization {
             const label = document.createElement('div');
             label.className = 'timeline-label';
             label.textContent = person.data.name.short[this.language];
+            
+            // Add this code to adjust font size based on text length
+            const shortName = person.data.name.short[this.language];
+            if (shortName.length > 15) {
+                // Calculate font size based on text length
+                // Start reducing from 14px when text is longer than 15 chars
+                // Minimum font size is 9px
+                const fontSize = Math.max(9, 14 - Math.floor((shortName.length - 15) / 2));
+                label.style.fontSize = `${fontSize}px`;
+            }
+            
             timeline.appendChild(label);
             
             const barWrapper = document.createElement('div');
