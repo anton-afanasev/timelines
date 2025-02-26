@@ -166,6 +166,8 @@
 
 .checkbox-item .years {
     white-space: nowrap;
+    font-size: 12px;
+    color: #666;
 }
 
 .checkbox-item label {
