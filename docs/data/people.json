@@ -39,7 +39,8 @@
                 "latest": "1519-05-02",
                 "label": "02.05.1519",
                 "label_year": "1519"
-            }
+            },
+            "mainLanguage": "Italian"
         }
     },
     {
@@ -92,7 +93,8 @@
                 "latest": "1910-04-21",
                 "label": "21.04.1910",
                 "label_year": "1910"
-            }
+            },
+            "mainLanguage": "English"
         }
     },
     {
@@ -135,7 +137,8 @@
                 "latest": "1965-01-24",
                 "label": "24.01.1965",
                 "label_year": "1965"
-            }
+            },
+            "mainLanguage": "English"
         }
     },
     {
@@ -206,7 +209,8 @@
                 "latest": "1953-03-05",
                 "label": "05.03.1953",
                 "label_year": "1953"
-            }
+            },
+            "mainLanguage": "Russian"
         }
     },
     {
@@ -255,7 +259,8 @@
                 "latest": "1945-04-12",
                 "label": "12.04.1945",
                 "label_year": "1945"
-            }
+            },
+            "mainLanguage": "English"
         }
     },
     {
@@ -300,7 +305,8 @@
                 "latest": "1553-04-09",
                 "label": "09.04.1553",
                 "label_year": "1553"
-            }
+            },
+            "mainLanguage": "French"
         }
     },
     {
@@ -377,7 +383,8 @@
                 "latest": "1465-12-31",
                 "label": "[1463, 1465]",
                 "label_year": "1463/1465"
-            }
+            },
+            "mainLanguage": "French"
         }
     },
     {
@@ -430,7 +437,8 @@
                 "latest": "1850-08-18",
                 "label": "18.08.1850",
                 "label_year": "1850"
-            }
+            },
+            "mainLanguage": "French"
         }
     },
     {
@@ -479,7 +487,8 @@
                 "latest": "1870-06-09",
                 "label": "09.06.1870",
                 "label_year": "1870"
-            }
+            },
+            "mainLanguage": "English"
         }
     },
     {
@@ -529,7 +538,8 @@
                 "sort": {
                     "en": "Petrov, Avvakum",
                     "ru": "Петров, Аввакум"
-                }
+                },
+                "mainLanguage": "Russian"
             },
             "birth": {
                 "earliest": "1620-12-05",
@@ -572,7 +582,8 @@
                 "sort": {
                     "en": "Tatishchev, Vasily",
                     "ru": "Татищев, Василий"
-                }
+                },
+                "mainLanguage": "Russian"
             },
             "birth": {
                 "earliest": "1686-04-19",
@@ -615,7 +626,8 @@
                 "sort": {
                     "en": "Trediakovsky, Vasily",
                     "ru": "Тредиаковский, Василий"
-                }
+                },
+                "mainLanguage": "Russian"
             },
             "birth": {
                 "earliest": "1703-03-05",
@@ -658,7 +670,8 @@
                 "sort": {
                     "en": "Kantemir, Antiochus",
                     "ru": "Кантемир, Антиох"
-                }
+                },
+                "mainLanguage": "Russian"
             },
             "birth": {
                 "earliest": "1709-09-21",
@@ -701,7 +714,8 @@
                 "sort": {
                     "en": "Lomonosov, Mikhail",
                     "ru": "Ломоносов, Михаил"
-                }
+                },
+                "mainLanguage": "Russian"
             },
             "birth": {
                 "earliest": "1711-11-19",
@@ -744,7 +758,8 @@
                 "sort": {
                     "en": "Sumarokov, Alexander",
                     "ru": "Сумароков, Александр"
-                }
+                },
+                "mainLanguage": "Russian"
             },
             "birth": {
                 "earliest": "1717-11-25",
@@ -787,7 +802,8 @@
                 "sort": {
                     "en": "Maykov, Vasily",
                     "ru": "Майков, Василий"
-                }
+                },
+                "mainLanguage": "Russian"
             },
             "birth": {
                 "earliest": "1728-01-01",
@@ -830,7 +846,8 @@
                 "sort": {
                     "en": "Skovoroda, Hryhorii",
                     "ru": "Сковорода, Григорий"
-                }
+                },
+                "mainLanguage": "Russian"
             },
             "birth": {
                 "earliest": "1722-12-03",
@@ -869,7 +886,8 @@
                 "sort": {
                     "en": "Komarov, Matvei",
                     "ru": "Комаров, Матвей"
-                }
+                },
+                "mainLanguage": "Russian"
             },
             "birth": {
                 "earliest": "1730-01-01",
@@ -912,7 +930,8 @@
                 "sort": {
                     "en": "Veltman, Alexander",
                     "ru": "Вельтман, Александр"
-                }
+                },
+                "mainLanguage": "Russian"
             },
             "birth": {
                 "earliest": "1800-07-20",
@@ -955,7 +974,8 @@
                 "sort": {
                     "en": "Zagoskin, Mikhail",
                     "ru": "Загоскин, Михаил"
-                }
+                },
+                "mainLanguage": "Russian"
             },
             "birth": {
                 "earliest": "1789-07-25",
@@ -998,7 +1018,8 @@
                 "sort": {
                     "en": "Polevoy, Nikolai",
                     "ru": "Полевой, Николай"
-                }
+                },
+                "mainLanguage": "Russian"
             },
             "birth": {
                 "earliest": "1796-07-03",
@@ -1041,7 +1062,8 @@
                 "sort": {
                     "en": "Lazhechnikov, Ivan",
                     "ru": "Лажечников, Иван"
-                }
+                },
+                "mainLanguage": "Russian"
             },
             "birth": {
                 "earliest": "1792-09-25",
@@ -1084,7 +1106,8 @@
                 "sort": {
                     "en": "Narezhny, Vasily",
                     "ru": "Нарежный, Василий"
-                }
+                },
+                "mainLanguage": "Russian"
             },
             "birth": {
                 "earliest": "1780-01-01",
