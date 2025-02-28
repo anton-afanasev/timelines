@@ -1,7 +1,34 @@
 {
-    "Russian": "#4169E1",
     "English": "#228B22",
+    "American English": "#006400",
+    "Middle English": "#90EE90",
+    
+    "German": "#DAA520",
+    "Middle High German": "#F0E68C",
+    "Dutch": "#B8860B",
+    
+    "Russian": "#4169E1",
+    "Ukrainian": "#1E90FF",
+    "Belarusian": "#6495ED",
+    "Polish": "#00BFFF",
+    "Old Slavonic": "#B0E0E6",
+    
     "French": "#CD5C5C",
+    "Middle French": "#F08080",
+    "Spanish": "#DC143C",
+    "Latin American Spanish": "#FF4500",
     "Italian": "#9370DB",
-    "German": "#DAA520"
+    "Portuguese": "#E9967A",
+    
+    "Latin": "#DEB887",
+    "Greek": "#7B68EE",
+    "Ancient Greek": "#E6E6FA",
+    "Sanskrit": "#D8BFD8",
+    
+    "Arabic": "#8B4513",
+    "Hebrew": "#A0522D",
+    "Persian": "#CD853F",
+    
+    "Japanese": "#FF69B4",
+    "Chinese": "#FF1493"
 }
