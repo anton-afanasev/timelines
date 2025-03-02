@@ -100,35 +100,55 @@ class TimelineVisualization {
         if (this.selectedPeople.size === 0) {
             // If no people selected, show full range
             const allDates = this.people.flatMap(person => [
-                new Date(person.data.birth.earliest),
-                new Date(person.data.birth.latest),
-                new Date(person.data.death.earliest),
-                new Date(person.data.death.latest)
+                this.parseDate(person.data.birth.earliest),
+                this.parseDate(person.data.birth.latest),
+                this.parseDate(person.data.death.earliest),
+                this.parseDate(person.data.death.latest)
             ]);
-            this.minDate = new Date(Math.min(...allDates));
-            this.maxDate = new Date(Math.max(...allDates));
+            this.minDate = new Date(Math.min(...allDates.map(d => d.getTime())));
+            this.maxDate = new Date(Math.max(...allDates.map(d => d.getTime())));
         } else {
             // Calculate range only for selected people
             const selectedDates = Array.from(this.selectedPeople).flatMap(person => [
-                new Date(person.data.birth.earliest),
-                new Date(person.data.birth.latest),
-                new Date(person.data.death.earliest),
-                new Date(person.data.death.latest)
+                this.parseDate(person.data.birth.earliest),
+                this.parseDate(person.data.birth.latest),
+                this.parseDate(person.data.death.earliest),
+                this.parseDate(person.data.death.latest)
             ]);
-            this.minDate = new Date(Math.min(...selectedDates));
-            this.maxDate = new Date(Math.max(...selectedDates));
+            this.minDate = new Date(Math.min(...selectedDates.map(d => d.getTime())));
+            this.maxDate = new Date(Math.max(...selectedDates.map(d => d.getTime())));
         }
 
         this.createTimeAxis();
         this.updateVisualization();
     }
 
+    // Update the parseDate method to handle BCE dates without leading zeros
+    parseDate(dateString) {
+        if (dateString.startsWith('-')) {
+            // BCE date
+            const parts = dateString.substring(1).split('-');
+            const year = parseInt(parts[0]) * -1;
+            const month = parseInt(parts[1]) - 1;
+            const day = parseInt(parts[2]);
+            return new Date(year, month, day);
+        } else {
+            // CE date
+            return new Date(dateString);
+        }
+    }
+
     formatDate(date) {
-        return date.toLocaleDateString('en-US', {
-            year: 'numeric',
-            month: 'short',
-            day: 'numeric'
-        });
+        const year = date.getFullYear();
+        if (year < 0) {
+            return `${Math.abs(year)} BCE`;
+        } else {
+            return date.toLocaleDateString('en-US', {
+                year: 'numeric',
+                month: 'short',
+                day: 'numeric'
+            });
+        }
     }
 
     createTimeAxis() {
@@ -138,19 +158,85 @@ class TimelineVisualization {
         
         const timeSpan = this.maxDate.getTime() - this.minDate.getTime();
         const yearSpan = this.maxDate.getFullYear() - this.minDate.getFullYear();
-        const stepSize = Math.ceil(yearSpan / 10);
-
-        for (let year = this.minDate.getFullYear(); year <= this.maxDate.getFullYear(); year += stepSize) {
+        
+        // Calculate appropriate step size based on year span
+        let stepSize = Math.ceil(yearSpan / 10);
+        
+        // Ensure we have at least one marker for small ranges
+        if (stepSize === 0) stepSize = 1;
+        
+        // Adjust starting year to ensure we include important years
+        let startYear = Math.floor(this.minDate.getFullYear() / stepSize) * stepSize;
+        
+        // Create array of years to display
+        const years = [];
+        
+        // Add all years at regular intervals
+        for (let year = startYear; year <= this.maxDate.getFullYear(); year += stepSize) {
+            // Skip years outside our range
+            if (year < this.minDate.getFullYear()) continue;
+            
+            // Skip actual year 0 (we'll add an interpolated one later if needed)
+            if (year === 0) continue;
+            
+            years.push(year);
+        }
+        
+        // Check if we need to add year 0 (if timeline crosses from BCE to CE)
+        if (this.minDate.getFullYear() < 0 && this.maxDate.getFullYear() > 0) {
+            // Find the closest negative and positive years in our array
+            const negativeYears = years.filter(y => y < 0);
+            const positiveYears = years.filter(y => y > 0);
+            
+            if (negativeYears.length > 0 && positiveYears.length > 0) {
+                const closestNegative = Math.max(...negativeYears);
+                const closestPositive = Math.min(...positiveYears);
+                
+                // Add year 0 to our array
+                years.push(0);
+                
+                // Sort the array to maintain chronological order
+                years.sort((a, b) => a - b);
+            }
+        }
+        
+        // Create markers for each year
+        years.forEach(year => {
             const marker = document.createElement('div');
             marker.className = 'time-marker';
-            marker.textContent = year;
             
-            const date = new Date(year, 0, 1);
-            const position = ((date.getTime() - this.minDate.getTime()) / timeSpan) * 100;
+            if (year < 0) {
+                marker.textContent = `-${Math.abs(year)}`;
+            } else {
+                marker.textContent = year;
+            }
+            
+            let position;
+            
+            if (year === 0) {
+                // For year 0, interpolate position between closest negative and positive years
+                const negativeYears = years.filter(y => y < 0);
+                const positiveYears = years.filter(y => y > 0);
+                const closestNegative = Math.max(...negativeYears);
+                const closestPositive = Math.min(...positiveYears);
+                
+                // Get positions of closest years
+                const negDate = new Date(closestNegative, 0, 1);
+                const posDate = new Date(closestPositive, 0, 1);
+                const negPos = ((negDate.getTime() - this.minDate.getTime()) / timeSpan) * 100;
+                const posPos = ((posDate.getTime() - this.minDate.getTime()) / timeSpan) * 100;
+                
+                // Interpolate position
+                position = (negPos + posPos) / 2;
+            } else {
+                // Normal position calculation for other years
+                const date = new Date(year, 0, 1);
+                position = ((date.getTime() - this.minDate.getTime()) / timeSpan) * 100;
+            }
+            
             marker.style.left = `${position}%`;
-            
             container.appendChild(marker);
-        }
+        });
     }
 
     updateVisualization() {
@@ -162,7 +248,8 @@ class TimelineVisualization {
         const sortedPeople = Array.from(this.selectedPeople)
             .sort((a, b) => {
                 // First compare by birth date
-                const dateComparison = new Date(a.data.birth.earliest) - new Date(b.data.birth.earliest);
+                const dateComparison = this.parseDate(a.data.birth.earliest).getTime() - 
+                                      this.parseDate(b.data.birth.earliest).getTime();
                 if (dateComparison !== 0) return dateComparison;
 
                 // If birth dates are identical, compare names in order according to current language
@@ -192,9 +279,6 @@ class TimelineVisualization {
             // Add this code to adjust font size based on text length
             const shortName = person.data.name.short[this.language];
             if (shortName.length > 15) {
-                // Calculate font size based on text length
-                // Start reducing from 14px when text is longer than 15 chars
-                // Minimum font size is 9px
                 const fontSize = Math.max(9, 14 - Math.floor((shortName.length - 15) / 2));
                 label.style.fontSize = `${fontSize}px`;
             }
@@ -206,14 +290,14 @@ class TimelineVisualization {
             
             // Get language-based color
             const mainLanguage = person.data.mainLanguage || 'default';
-            const barColor = this.languageColors[mainLanguage] || '#4CAF50'; // Default to existing green
+            const barColor = this.languageColors[mainLanguage] || '#4CAF50';
             
             const certainBar = document.createElement('div');
             certainBar.className = 'timeline-bar certain';
-            certainBar.style.backgroundColor = barColor; // Apply language-based color
+            certainBar.style.backgroundColor = barColor;
             
-            const earliestBirth = new Date(person.data.birth.latest);
-            const latestDeath = new Date(person.data.death.earliest);
+            const earliestBirth = this.parseDate(person.data.birth.latest);
+            const latestDeath = this.parseDate(person.data.death.earliest);
             
             const certainStartPosition = ((earliestBirth.getTime() - this.minDate.getTime()) / timeSpan) * 100;
             const certainWidth = ((latestDeath.getTime() - earliestBirth.getTime()) / timeSpan) * 100;
@@ -224,8 +308,8 @@ class TimelineVisualization {
             if (person.data.birth.earliest !== person.data.birth.latest) {
                 const uncertainBirthBar = document.createElement('div');
                 uncertainBirthBar.className = 'timeline-bar uncertain left-uncertain';
-                uncertainBirthBar.style.backgroundColor = barColor; // Apply language-based color
-                const uncertainBirthStart = new Date(person.data.birth.earliest);
+                uncertainBirthBar.style.backgroundColor = barColor;
+                const uncertainBirthStart = this.parseDate(person.data.birth.earliest);
                 const uncertainBirthWidth = ((earliestBirth.getTime() - uncertainBirthStart.getTime()) / timeSpan) * 100;
                 uncertainBirthBar.style.left = `${(uncertainBirthStart.getTime() - this.minDate.getTime()) / timeSpan * 100}%`;
                 uncertainBirthBar.style.width = `${uncertainBirthWidth}%`;
@@ -237,8 +321,8 @@ class TimelineVisualization {
             if (person.data.death.earliest !== person.data.death.latest) {
                 const uncertainDeathBar = document.createElement('div');
                 uncertainDeathBar.className = 'timeline-bar uncertain right-uncertain';
-                uncertainDeathBar.style.backgroundColor = barColor; // Apply language-based color
-                const uncertainDeathEnd = new Date(person.data.death.latest);
+                uncertainDeathBar.style.backgroundColor = barColor;
+                const uncertainDeathEnd = this.parseDate(person.data.death.latest);
                 const uncertainDeathWidth = ((uncertainDeathEnd.getTime() - latestDeath.getTime()) / timeSpan) * 100;
                 uncertainDeathBar.style.left = `${(latestDeath.getTime() - this.minDate.getTime()) / timeSpan * 100}%`;
                 uncertainDeathBar.style.width = `${uncertainDeathWidth}%`;
@@ -317,7 +401,8 @@ class TimelineVisualization {
                 return (a.data.name.patronymic?.[this.language] || '').localeCompare(b.data.name.patronymic?.[this.language] || '', this.language);
             }
             // If all names are equal, sort by birth date
-            return new Date(a.data.birth.earliest) - new Date(b.data.birth.earliest);
+            return this.parseDate(a.data.birth.earliest).getTime() - 
+                   this.parseDate(b.data.birth.earliest).getTime();
         });
         
         sortedPeople.forEach(person => {
