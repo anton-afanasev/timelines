@@ -123,18 +123,28 @@ class TimelineVisualization {
         this.updateVisualization();
     }
 
-    // Update the parseDate method to handle BCE dates without leading zeros
     parseDate(dateString) {
+        // Handle BCE dates (with minus sign)
         if (dateString.startsWith('-')) {
-            // BCE date
             const parts = dateString.substring(1).split('-');
-            const year = parseInt(parts[0]) * -1;
-            const month = parseInt(parts[1]) - 1;
-            const day = parseInt(parts[2]);
+            const year = -parseInt(parts[0], 10); // Make year negative
+            const month = parts.length > 1 ? parseInt(parts[1], 10) - 1 : 0; // Months are 0-indexed
+            const day = parts.length > 2 ? parseInt(parts[2], 10) : 1;
             return new Date(year, month, day);
         } else {
-            // CE date
-            return new Date(dateString);
+            // Handle CE dates
+            const parts = dateString.split('-');
+            
+            // Ensure year has 4 digits by padding with zeros if needed
+            let year = parts[0];
+            if (year.length < 4) {
+                year = year.padStart(4, '0');
+            }
+            
+            const month = parts.length > 1 ? parseInt(parts[1], 10) - 1 : 0; // Months are 0-indexed
+            const day = parts.length > 2 ? parseInt(parts[2], 10) : 1;
+            
+            return new Date(`${year}-${(month + 1).toString().padStart(2, '0')}-${day.toString().padStart(2, '0')}`);
         }
     }
 
@@ -173,12 +183,8 @@ class TimelineVisualization {
         
         // Add all years at regular intervals
         for (let year = startYear; year <= this.maxDate.getFullYear(); year += stepSize) {
-            // Skip years outside our range
-            if (year < this.minDate.getFullYear()) continue;
-            
-            // Skip actual year 0 (we'll add an interpolated one later if needed)
-            if (year === 0) continue;
-            
+            // Skip years outside our range and year 0
+            if (year < this.minDate.getFullYear() || year === 0) continue;
             years.push(year);
         }
         
@@ -187,6 +193,23 @@ class TimelineVisualization {
             // Find the closest negative and positive years in our array
             const negativeYears = years.filter(y => y < 0);
             const positiveYears = years.filter(y => y > 0);
+            
+            // Ensure we have at least one positive year marker
+            if (positiveYears.length === 0 && this.maxDate.getFullYear() > 0) {
+                // Add the first CE year that's a multiple of the step size
+                for (let year = stepSize; year <= this.maxDate.getFullYear(); year += stepSize) {
+                    years.push(year);
+                    break; // Just add one year
+                }
+                
+                // If still no positive years, add the max year
+                if (years.filter(y => y > 0).length === 0) {
+                    years.push(this.maxDate.getFullYear());
+                }
+                
+                // Sort the array to maintain chronological order
+                years.sort((a, b) => a - b);
+            }
             
             if (negativeYears.length > 0 && positiveYears.length > 0) {
                 const closestNegative = Math.max(...negativeYears);
