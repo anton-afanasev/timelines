@@ -1,29 +1,29 @@
 {
     "English": "#228B22",
     "American English": "#006400",
-    "Middle English": "#90EE90",
+    "Middle English": "#2E8B57",
     
     "German": "#DAA520",
-    "Middle High German": "#F0E68C",
-    "Dutch": "#B8860B",
+    "Middle High German": "#B8860B",
+    "Dutch": "#CD950C",
     
     "Russian": "#4169E1",
     "Ukrainian": "#1E90FF",
     "Belarusian": "#6495ED",
     "Polish": "#00BFFF",
-    "Old Slavonic": "#B0E0E6",
+    "Old Slavonic": "#4682B4",
     
     "French": "#CD5C5C",
-    "Middle French": "#F08080",
+    "Middle French": "#B22222",
     "Spanish": "#DC143C",
     "Latin American Spanish": "#FF4500",
     "Italian": "#9370DB",
     "Portuguese": "#E9967A",
     
-    "Latin": "#DEB887",
-    "Greek": "#7B68EE",
-    "Ancient Greek": "#E6E6FA",
-    "Sanskrit": "#D8BFD8",
+    "Latin": "#8B4513",
+    "Greek": "#483D8B",
+    "Ancient Greek": "#6A5ACD",
+    "Sanskrit": "#9932CC",
     
     "Arabic": "#8B4513",
     "Hebrew": "#A0522D",

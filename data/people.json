@@ -1122,5 +1122,41 @@
             },
             "mainLanguage": "Russian"
         }
+    },
+    {
+        "id": "plato-427",
+        "data": {
+            "name": {
+                "first": {
+                    "en": "Plato",
+                    "ru": "Платон"
+                },
+                "full": {
+                    "en": "Plato",
+                    "ru": "Платон"
+                },
+                "short": {
+                    "en": "Plato",
+                    "ru": "Платон"
+                },
+                "sort": {
+                    "en": "Plato",
+                    "ru": "Платон"
+                }
+            },
+            "birth": {
+                "earliest": "-427-01-01",
+                "latest": "-427-12-31",
+                "label": "427 BCE",
+                "label_year": "427 BCE"
+            },
+            "death": {
+                "earliest": "-347-01-01",
+                "latest": "-347-12-31",
+                "label": "347 BCE",
+                "label_year": "347 BCE"
+            },
+            "mainLanguage": "Ancient Greek"
+        }
     }
 ] 
