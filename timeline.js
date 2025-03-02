@@ -252,18 +252,9 @@ class TimelineVisualization {
                                       this.parseDate(b.data.birth.earliest).getTime();
                 if (dateComparison !== 0) return dateComparison;
 
-                // If birth dates are identical, compare names in order according to current language
-                if (a.data.name.last?.[this.language] !== b.data.name.last?.[this.language]) {
-                    return (a.data.name.last?.[this.language] || '').localeCompare(b.data.name.last?.[this.language] || '', this.language);
-                }
-                if (a.data.name.first?.[this.language] !== b.data.name.first?.[this.language]) {
-                    return (a.data.name.first?.[this.language] || '').localeCompare(b.data.name.first?.[this.language] || '', this.language);
-                }
-                if (a.data.name.middle?.[this.language] !== b.data.name.middle?.[this.language]) {
-                    return (a.data.name.middle?.[this.language] || '').localeCompare(b.data.name.middle?.[this.language] || '', this.language);
-                }
-                if (a.data.name.patronymic?.[this.language] !== b.data.name.patronymic?.[this.language]) {
-                    return (a.data.name.patronymic?.[this.language] || '').localeCompare(b.data.name.patronymic?.[this.language] || '', this.language);
+                // If birth dates are identical, compare sort names in order according to current language
+                if (a.data.name.sort?.[this.language] !== b.data.name.sort?.[this.language]) {
+                    return (a.data.name.sort?.[this.language] || '').localeCompare(b.data.name.sort?.[this.language] || '', this.language);
                 }
                 return 0;
             });
@@ -384,21 +375,9 @@ class TimelineVisualization {
         });
         
         const sortedPeople = [...this.people].sort((a, b) => {
-            // Compare last names in current language
-            if (a.data.name.last?.[this.language] !== b.data.name.last?.[this.language]) {
-                return (a.data.name.last?.[this.language] || '').localeCompare(b.data.name.last?.[this.language] || '', this.language);
-            }
-            // Compare first names
-            if (a.data.name.first?.[this.language] !== b.data.name.first?.[this.language]) {
-                return (a.data.name.first?.[this.language] || '').localeCompare(b.data.name.first?.[this.language] || '', this.language);
-            }
-            // Compare middle names if they exist
-            if (a.data.name.middle?.[this.language] !== b.data.name.middle?.[this.language]) {
-                return (a.data.name.middle?.[this.language] || '').localeCompare(b.data.name.middle?.[this.language] || '', this.language);
-            }
-            // Compare patronymics if they exist
-            if (a.data.name.patronymic?.[this.language] !== b.data.name.patronymic?.[this.language]) {
-                return (a.data.name.patronymic?.[this.language] || '').localeCompare(b.data.name.patronymic?.[this.language] || '', this.language);
+            // Compare sort names in current language
+            if (a.data.name.sort?.[this.language] !== b.data.name.sort?.[this.language]) {
+                return (a.data.name.sort?.[this.language] || '').localeCompare(b.data.name.sort?.[this.language] || '', this.language);
             }
             // If all names are equal, sort by birth date
             return this.parseDate(a.data.birth.earliest).getTime() - 
@@ -429,7 +408,7 @@ class TimelineVisualization {
             label.htmlFor = person.id;
             
             const nameSpan = document.createElement('span');
-            nameSpan.textContent = person.data.name.sort[this.language];
+            nameSpan.textContent = person.data.name.search[this.language];
             
             const yearsSpan = document.createElement('span');
             yearsSpan.className = 'years';
@@ -444,14 +423,25 @@ class TimelineVisualization {
             dropdownContainer.appendChild(div);
         });
 
-        searchInput.addEventListener('input', (e) => {
-            const searchText = e.target.value.toLowerCase();
-            const items = dropdownContainer.getElementsByClassName('checkbox-item');
+        searchInput.addEventListener('input', () => {
+            const searchTerm = searchInput.value.toLowerCase();
             
-            Array.from(items).forEach(item => {
-                const label = item.querySelector('label');
-                const text = label.textContent.toLowerCase();
-                item.style.display = text.includes(searchText) ? 'block' : 'none';
+            const checkboxItems = dropdownContainer.querySelectorAll('.checkbox-item');
+            checkboxItems.forEach(item => {
+                const nameSpan = item.querySelector('span');
+                const name = nameSpan.textContent.toLowerCase();
+                const personId = item.querySelector('input').id.replace('person-', '');
+                const person = this.people.find(p => p.id === personId);
+                
+                // Use search field if available, otherwise fall back to short name
+                const searchText = person.data.name.search?.[this.language]?.toLowerCase() || 
+                                  person.data.name.short[this.language].toLowerCase();
+                
+                if (searchText.includes(searchTerm) || name.includes(searchTerm)) {
+                    item.style.display = 'block';
+                } else {
+                    item.style.display = 'none';
+                }
             });
         });
 

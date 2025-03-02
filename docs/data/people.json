@@ -23,9 +23,13 @@
                     "en": "Leonardo da Vinci",
                     "ru": "Леонардо да Винчи"
                 },
-                "sort": {
+                "search": {
                     "en": "da Vinci, Leonardo",
                     "ru": "да Винчи, Леонардо"
+                },
+                "sort": {
+                    "en": "Vinci, Leonardo da",
+                    "ru": "Винчи, Леонардо да"
                 }
             },
             "birth": {
@@ -67,7 +71,7 @@
                     "en": "Mark Twain",
                     "ru": "Марк Твен"
                 },
-                "sort": {
+                "search": {
                     "en": "Clemens, Samuel (Mark Twain)",
                     "ru": "Клеменс, Сэмюэл (Марк Твен)"
                 },
@@ -80,7 +84,11 @@
                         "en": "Josh",
                         "ru": "Джош"
                     }
-                ]
+                ],
+                "sort": {
+                    "en": "Clemens, Samuel Langhorne (Mark Twain)",
+                    "ru": "Клеменс, Сэмюэл Лэнгхорн (Марк Твен)"
+                }
             },
             "birth": {
                 "earliest": "1835-11-30",
@@ -121,9 +129,13 @@
                     "en": "Winston Churchill",
                     "ru": "Уинстон Черчилль"
                 },
-                "sort": {
+                "search": {
                     "en": "Churchill, Winston",
                     "ru": "Черчилль, Уинстон"
+                },
+                "sort": {
+                    "en": "Churchill, Winston Leonard Spencer",
+                    "ru": "Черчилль, Уинстон Леонард Спенсер"
                 }
             },
             "birth": {
@@ -171,19 +183,19 @@
                         "ru": "Бесарионис дзе"
                     },
                     "full": {
-                        "en": "Ioseb Besarionis dze Jughashvili",
-                        "ru": "Иосеб Бесарионис дзе Джугашвили"
+                        "en": "Jughashvili Ioseb Besarionis dze",
+                        "ru": "Джугашвили Иосеб Бесарионис дзе"
                     }
                 },
                 "full": {
-                    "en": "Joseph Vissarionovich Stalin",
-                    "ru": "Иосиф Виссарионович Сталин"
+                    "en": "Stalin Joseph Vissarionovich",
+                    "ru": "Сталин Иосиф Виссарионович"
                 },
                 "short": {
                     "en": "Joseph Stalin",
                     "ru": "Иосиф Сталин"
                 },
-                "sort": {
+                "search": {
                     "en": "Stalin, Joseph",
                     "ru": "Сталин, Иосиф"
                 },
@@ -196,7 +208,11 @@
                         "en": "Soso",
                         "ru": "Сосо"
                     }
-                ]
+                ],
+                "sort": {
+                    "en": "Stalin Joseph Vissarionovich",
+                    "ru": "Сталин Иосиф Виссарионович"
+                }
             },
             "birth": {
                 "earliest": "1878-12-18",
@@ -237,7 +253,7 @@
                     "en": "Franklin Roosevelt",
                     "ru": "Франклин Рузвельт"
                 },
-                "sort": {
+                "search": {
                     "en": "Roosevelt, Franklin",
                     "ru": "Рузвельт, Франклин"
                 },
@@ -246,7 +262,11 @@
                         "en": "FDR",
                         "ru": "ФДР"
                     }
-                ]
+                ],
+                "sort": {
+                    "en": "Roosevelt, Franklin Delano",
+                    "ru": "Рузвельт, Франклин Делано"
+                }
             },
             "birth": {
                 "earliest": "1882-01-30",
@@ -283,7 +303,7 @@
                     "en": "François Rabelais",
                     "ru": "Франсуа Рабле"
                 },
-                "sort": {
+                "search": {
                     "en": "Rabelais, François",
                     "ru": "Рабле, Франсуа"
                 },
@@ -292,7 +312,11 @@
                         "en": "Alcofribas Nasier",
                         "ru": "Алькофрибас Назье"
                     }
-                ]
+                ],
+                "sort": {
+                    "en": "Rabelais, François",
+                    "ru": "Рабле, Франсуа"
+                }
             },
             "birth": {
                 "earliest": "1483-01-01",
@@ -367,6 +391,10 @@
                     "en": "François Villon",
                     "ru": "Франсуа Вийон"
                 },
+                "search": {
+                    "en": "Villon, François",
+                    "ru": "Вийон, Франсуа"
+                },
                 "sort": {
                     "en": "Villon, François",
                     "ru": "Вийон, Франсуа"
@@ -411,7 +439,7 @@
                     "en": "Honoré de Balzac",
                     "ru": "Оноре де Бальзак"
                 },
-                "sort": {
+                "search": {
                     "en": "de Balzac, Honoré",
                     "ru": "де Бальзак, Оноре"
                 },
@@ -424,7 +452,11 @@
                         "en": "Lord R'hoone",
                         "ru": "Лорд Р'оон"
                     }
-                ]
+                ],
+                "sort": {
+                    "en": "Balzac, Honoré de",
+                    "ru": "Бальзак, Оноре де"
+                }
             },
             "birth": {
                 "earliest": "1799-05-20",
@@ -465,7 +497,7 @@
                     "en": "Charles Dickens",
                     "ru": "Чарльз Диккенс"
                 },
-                "sort": {
+                "search": {
                     "en": "Dickens, Charles",
                     "ru": "Диккенс, Чарльз"
                 },
@@ -474,7 +506,11 @@
                         "en": "Boz",
                         "ru": "Боз"
                     }
-                ]
+                ],
+                "sort": {
+                    "en": "Dickens, Charles John Huffam",
+                    "ru": "Диккенс, Чарльз Джон Хаффем"
+                }
             },
             "birth": {
                 "earliest": "1812-02-07",
@@ -522,22 +558,26 @@
                             "ru": "Петрович"
                         },
                         "full": {
-                            "en": "Avvakum Petrovich Kondratiev",
-                            "ru": "Аввакум Петрович Кондратьев"
+                            "en": "Kondratiev Avvakum Petrovich",
+                            "ru": "Кондратьев Аввакум Петрович"
                         }
                     }
                 ],
                 "full": {
-                    "en": "Avvakum Petrovich Petrov",
-                    "ru": "Аввакум Петрович Петров"
+                    "en": "Petrov Avvakum Petrovich",
+                    "ru": "Петров Аввакум Петрович"
                 },
                 "short": {
                     "en": "Avvakum Petrov",
                     "ru": "Аввакум Петров"
                 },
-                "sort": {
+                "search": {
                     "en": "Petrov, Avvakum",
                     "ru": "Петров, Аввакум"
+                },
+                "sort": {
+                    "en": "Petrov Avvakum Petrovich",
+                    "ru": "Петров Аввакум Петрович"
                 }
             },
             "birth": {
@@ -579,9 +619,13 @@
                     "en": "Vasily Tatishchev",
                     "ru": "Василий Татищев"
                 },
-                "sort": {
+                "search": {
                     "en": "Tatishchev, Vasily",
                     "ru": "Татищев, Василий"
+                },
+                "sort": {
+                    "en": "Tatishchev Vasily Nikitich",
+                    "ru": "Татищев Василий Никитич"
                 }
             },
             "birth": {
@@ -623,9 +667,13 @@
                     "en": "Vasily Trediakovsky",
                     "ru": "Василий Тредиаковский"
                 },
-                "sort": {
+                "search": {
                     "en": "Trediakovsky, Vasily",
                     "ru": "Тредиаковский, Василий"
+                },
+                "sort": {
+                    "en": "Trediakovsky Vasily Kirillovich",
+                    "ru": "Тредиаковский Василий Кириллович"
                 }
             },
             "birth": {
@@ -667,9 +715,13 @@
                     "en": "Antiochus Kantemir",
                     "ru": "Антиох Кантемир"
                 },
-                "sort": {
+                "search": {
                     "en": "Kantemir, Antiochus",
                     "ru": "Кантемир, Антиох"
+                },
+                "sort": {
+                    "en": "Kantemir Antiochus Dmitrievich",
+                    "ru": "Кантемир Антиох Дмитриевич"
                 }
             },
             "birth": {
@@ -711,9 +763,13 @@
                     "en": "Mikhail Lomonosov",
                     "ru": "Михаил Ломоносов"
                 },
-                "sort": {
+                "search": {
                     "en": "Lomonosov, Mikhail",
                     "ru": "Ломоносов, Михаил"
+                },
+                "sort": {
+                    "en": "Lomonosov Mikhail Vasilievich",
+                    "ru": "Ломоносов Михаил Васильевич"
                 }
             },
             "birth": {
@@ -755,9 +811,13 @@
                     "en": "Alexander Sumarokov",
                     "ru": "Александр Сумароков"
                 },
-                "sort": {
+                "search": {
                     "en": "Sumarokov, Alexander",
                     "ru": "Сумароков, Александр"
+                },
+                "sort": {
+                    "en": "Sumarokov Alexander Petrovich",
+                    "ru": "Сумароков Александр Петрович"
                 }
             },
             "birth": {
@@ -799,9 +859,13 @@
                     "en": "Vasily Maykov",
                     "ru": "Василий Майков"
                 },
-                "sort": {
+                "search": {
                     "en": "Maykov, Vasily",
                     "ru": "Майков, Василий"
+                },
+                "sort": {
+                    "en": "Maykov Vasily Ivanovich",
+                    "ru": "Майков Василий Иванович"
                 }
             },
             "birth": {
@@ -843,9 +907,13 @@
                     "en": "Hryhorii Skovoroda",
                     "ru": "Григорий Сковорода"
                 },
-                "sort": {
+                "search": {
                     "en": "Skovoroda, Hryhorii",
                     "ru": "Сковорода, Григорий"
+                },
+                "sort": {
+                    "en": "Skovoroda Hryhorii Savvich",
+                    "ru": "Сковорода Григорий Саввич"
                 }
             },
             "birth": {
@@ -883,9 +951,13 @@
                     "en": "Matvei Komarov",
                     "ru": "Матвей Комаров"
                 },
-                "sort": {
+                "search": {
                     "en": "Komarov, Matvei",
                     "ru": "Комаров, Матвей"
+                },
+                "sort": {
+                    "en": "Komarov Matvei",
+                    "ru": "Комаров Матвей"
                 }
             },
             "birth": {
@@ -927,9 +999,13 @@
                     "en": "Alexander Veltman",
                     "ru": "Александр Вельтман"
                 },
-                "sort": {
+                "search": {
                     "en": "Veltman, Alexander",
                     "ru": "Вельтман, Александр"
+                },
+                "sort": {
+                    "en": "Veltman Alexander Fomich",
+                    "ru": "Вельтман Александр Фомич"
                 }
             },
             "birth": {
@@ -971,9 +1047,13 @@
                     "en": "Mikhail Zagoskin",
                     "ru": "Михаил Загоскин"
                 },
-                "sort": {
+                "search": {
                     "en": "Zagoskin, Mikhail",
                     "ru": "Загоскин, Михаил"
+                },
+                "sort": {
+                    "en": "Zagoskin Mikhail Nikolayevich",
+                    "ru": "Загоскин Михаил Николаевич"
                 }
             },
             "birth": {
@@ -1015,9 +1095,13 @@
                     "en": "Nikolai Polevoy",
                     "ru": "Николай Полевой"
                 },
-                "sort": {
+                "search": {
                     "en": "Polevoy, Nikolai",
                     "ru": "Полевой, Николай"
+                },
+                "sort": {
+                    "en": "Polevoy Nikolai Alekseevich",
+                    "ru": "Полевой Николай Алексеевич"
                 }
             },
             "birth": {
@@ -1059,9 +1143,13 @@
                     "en": "Ivan Lazhechnikov",
                     "ru": "Иван Лажечников"
                 },
-                "sort": {
+                "search": {
                     "en": "Lazhechnikov, Ivan",
                     "ru": "Лажечников, Иван"
+                },
+                "sort": {
+                    "en": "Lazhechnikov Ivan Ivanovich",
+                    "ru": "Лажечников Иван Иванович"
                 }
             },
             "birth": {
@@ -1103,9 +1191,13 @@
                     "en": "Vasily Narezhny",
                     "ru": "Василий Нарежный"
                 },
-                "sort": {
+                "search": {
                     "en": "Narezhny, Vasily",
                     "ru": "Нарежный, Василий"
+                },
+                "sort": {
+                    "en": "Narezhny Vasily Trofimovich",
+                    "ru": "Нарежный Василий Трофимович"
                 }
             },
             "birth": {
@@ -1139,6 +1231,10 @@
                     "en": "Plato",
                     "ru": "Платон"
                 },
+                "search": {
+                    "en": "Plato",
+                    "ru": "Платон"
+                },
                 "sort": {
                     "en": "Plato",
                     "ru": "Платон"
@@ -1157,6 +1253,126 @@
                 "label_year": "347 BCE"
             },
             "mainLanguage": "Ancient Greek"
+        }
+    },
+    {
+        "id": "ciceromarcus-106",
+        "data": {
+            "name": {
+                "praenomen": {
+                    "en": "Marcus",
+                    "ru": "Марк"
+                },
+                "nomen": {
+                    "en": "Tullius",
+                    "ru": "Туллий"
+                },
+                "cognomen": {
+                    "en": "Cicero",
+                    "ru": "Цицерон"
+                },
+                "full": {
+                    "en": "Marcus Tullius Cicero",
+                    "ru": "Марк Туллий Цицерон"
+                },
+                "short": {
+                    "en": "Cicero",
+                    "ru": "Цицерон"
+                },
+                "search": {
+                    "en": "Cicero, Marcus Tullius",
+                    "ru": "Цицерон, Марк Туллий"
+                },
+                "sort": {
+                    "en": "Cicero, Marcus Tullius",
+                    "ru": "Цицерон, Марк Туллий"
+                }
+            },
+            "birth": {
+                "earliest": "-106-01-03",
+                "latest": "-106-01-03",
+                "label": "03.01.106 BCE",
+                "label_year": "106 BCE"
+            },
+            "death": {
+                "earliest": "-43-12-07",
+                "latest": "-43-12-07",
+                "label": "07.12.43 BCE",
+                "label_year": "43 BCE"
+            },
+            "mainLanguage": "Latin"
+        }
+    },
+    {
+        "id": "tiberiusjulius-42",
+        "data": {
+            "name": {
+                "praenomen": {
+                    "en": "Tiberius",
+                    "ru": "Тиберий"
+                },
+                "nomen": {
+                    "en": "Julius",
+                    "ru": "Юлий"
+                },
+                "cognomen": {
+                    "en": "Caesar",
+                    "ru": "Цезарь"
+                },
+                "agnomen": {
+                    "en": "Augustus",
+                    "ru": "Август"
+                },
+                "born": [
+                    {
+                        "praenomen": {
+                            "en": "Tiberius",
+                            "ru": "Тиберий"
+                        },
+                        "nomen": {
+                            "en": "Claudius",
+                            "ru": "Клавдий"
+                        },
+                        "cognomen": {
+                            "en": "Nero",
+                            "ru": "Нерон"
+                        },
+                        "full": {
+                            "en": "Tiberius Claudius Nero",
+                            "ru": "Тиберий Клавдий Нерон"
+                        }
+                    }
+                ],
+                "full": {
+                    "en": "Tiberius Julius Caesar Augustus",
+                    "ru": "Тиберий Юлий Цезарь Август"
+                },
+                "short": {
+                    "en": "Tiberius",
+                    "ru": "Тиберий"
+                },
+                "search": {
+                    "en": "Tiberius",
+                    "ru": "Тиберий"
+                },
+                "sort": {
+                    "en": "Tiberius Julius Caesar Augustus",
+                    "ru": "Тиберий Юлий Цезарь Август"
+                }
+            },
+            "birth": {
+                "earliest": "-42-11-16",
+                "latest": "-42-11-16",
+                "label": "16.11.42 BCE",
+                "label_year": "42 BCE"
+            },
+            "death": {
+                "earliest": "37-03-16",
+                "latest": "37-03-16",
+                "label": "16.03.37",
+                "label_year": "37"
+            },
+            "mainLanguage": "Latin"
         }
     }
 ] 
